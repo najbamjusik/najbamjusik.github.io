@@ -117,12 +117,12 @@
 <h1>💿💿💿 najbamjusik.pl 💿💿💿</h1>
 
 <!-- game canvas ------------------------- -->
-<!--<div class="gm4html5_div_class" id="gm4html5_div_id">-->
-<!--    <canvas id="canvas" width="1280" height="720"-->
-<!--            style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">-->
-<!--        <p>Your browser doesn't support HTML5 canvas.</p>-->
-<!--    </canvas>-->
-<!--</div>-->
+<div class="gm4html5_div_class" id="gm4html5_div_id">
+    <canvas id="canvas" width="1280" height="720"
+            style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">
+        <p>Your browser doesn't support HTML5 canvas.</p>
+    </canvas>
+</div>
 <!-- game canvas end ------------------------- -->
 
 <!-- event handler ------------------------- -->
@@ -153,6 +153,9 @@
                 fbq('trackCustom', 'GameStarted', {
                     content_name: gameType,
                     content_category: "game",
+                    gameCounter,
+                    time,
+                    score,
                 });
                 console.log("START");
             }
@@ -221,8 +224,8 @@
 <!-- End Event handler ------------------------- -->
 
 <script src="//www.instagram.com/embed.js"></script>
-<!--<script type="text/javascript" src="game/ballada-o-dojrzalosci.js?KNIAC=2056727648"></script>-->
-<!--<script>window.onload = GameMaker_Init;</script>-->
+<script type="text/javascript" src="game/ballada-o-dojrzalosci.js?KNIAC=2056727648"></script>
+<script>window.onload = GameMaker_Init;</script>
 
 <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br><br><br>
 <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br><br><br>
