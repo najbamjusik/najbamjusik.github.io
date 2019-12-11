@@ -130,7 +130,7 @@
     const DOJRZALOSC = "KRULIG_DOJRZALOSC";
     const DZBAN_POLICJA = "DZBAN_POLICJA";
 
-    const gameSession = createUUID();
+    const sessionId = createUUID();
     const clientId = initClientId();
 
     var gameEvent = function (rawGameType, rawEventName, rawParams) {
@@ -143,7 +143,7 @@
         const time = Math.round(params.time);
         const gameCounter = params.gameCounter;
 
-        console.log({gameType, gameCounter, time, score, gameSession});
+        console.log({gameType, gameCounter, time, score, sessionId});
 
         if (time === 0) {
             if (gameCounter > 1) {
@@ -151,6 +151,8 @@
             } else {
 
                 fbq('trackCustom', 'GameStarted', {
+                    clientId,
+                    sessionId,
                     content_name: gameType,
                     content_category: "game",
                     gameCounter,
