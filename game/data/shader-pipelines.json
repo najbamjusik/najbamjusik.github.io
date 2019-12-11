@@ -1,0 +1,10 @@
+[
+    {
+        "name": "main",
+        "limit": 3
+    },
+    {
+        "name": "captured",
+        "limit": 1
+    }
+]

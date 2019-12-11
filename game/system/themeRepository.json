@@ -1,0 +1,90 @@
+{
+    "name": "ThemeRepository",
+    "type": "Theme",
+    "data": {
+        "checkbox": {
+            "name": "checkbox",
+            "attributes": {
+                "containerColor": "#FFFFFF",
+                "markColor": "#FFFFFF",
+                "labelFont": "font_ibm_ps2thin4",
+                "labelColor": "#FFFFFF"
+            }
+        },
+        "button": {
+            "name": "button",
+            "attributes": {
+                "color": "#424242",
+                "colorPressed": "#555555",
+                "textFont": "font_ibm_ps2thin4",
+                "textColor": "#FFFFFF",
+                "textPressedColor": "#FFFFFF"
+            }
+        },
+        "slider": {
+            "name": "slider",
+            "attributes": {
+                "lineColor": "#FFFFFF",
+                "lineWidth": 1,
+                "markerColor": "#E91E63",
+                "markerRadius": 6,
+                "valueColor": "#FFFFFF",
+                "valueFont": "font_ibm_ps2thin4",
+                "labelColor": "#FFFFFF",
+                "labelFont": "font_ibm_ps2thin4",
+                "labelTopPadding": 8,
+                "labelBottomPadding": 6
+            }
+        },
+        "text": {
+            "name": "text",
+            "attributes": {
+                "alpha": 1.0,
+                "color": "#FFFFFF",
+                "font": "font_ibm_ps2thin4"
+            }
+        },
+        "window": {
+            "name": "window",
+            "attributes": {
+                "containerColor": "#FFFFFF",
+                "titleBarHeight": 20,
+                "resizeTriangleLength": 10,
+                "windowBackgroundAlpha": 0.9,
+                "windowBackgroundColor": "#303030",
+                "windowTitleBarAlpha": 0.8,
+                "windowTitleBarColor": "#424242",
+                "windowTitleBarFocusedAlpha": 1.0,
+                "windowTitleBarFocusedColor": "#E91E63",
+                "windowFrameAlpha": 0.8,
+                "windowFrameColor": "#424242",
+                "windowFrameFocusedAlpha": 1,
+                "windowFrameFocusedColor": "#E91E63",
+                "windowTitleFont": "font_tandy_tv2y",
+                "windowTitleFontColor": "#939393",
+                "windowTitleFontFocusedColor": "#FFFFFF",
+                "windowTitleButtonMargin": 4,
+                "windowTitleCloseColorFocused": "#FFFFFF",
+                "windowTitleCloseColor": "#FFFFFF",
+                "windowTitleCloseAlphaFocused": 0.4,
+                "windowTitleCloseAlpha": 0.2,
+                "scrollBarMargin": 0,
+                "scrollBarAlpha": 0.5,
+                "scrollBarColor": "#424242",
+                "scrollBarAlphaFocused": 0.8,
+                "scrollBarColorFocused":"#E91E63",
+                "scrollGripMargin": 2,
+                "scrollGripAlpha": 0.5,
+                "scrollGripColor": "#424242",
+                "scrollGripAlphaFocused": 0.8,
+                "scrollGripColorFocused": "#E91E63",
+                "scrollButtonMargin": 0,
+                "scrollButtonLength": 8,
+                "scrollButtonAlpha": 0.5,
+                "scrollButtonAlphaFocused": 0.8,
+                "scrollButtonColor": "#424242",
+                "scrollButtonColorFocused": "#E91E63"
+            }
+        }
+    }
+}
