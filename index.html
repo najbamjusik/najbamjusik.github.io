@@ -143,32 +143,46 @@
         const time = Math.round(params.time);
         const gameCounter = params.gameCounter;
 
-        console.log({gameType, gameCounter, time, score, sessionId});
+        // console.log({gameType, gameCounter, time, score, sessionId});
+
+        putGAGameEvent("GamePlaying");
 
         if (time === 0) {
             if (gameCounter > 1) {
-                putPixelEvent("GameRestarted");
+                putPixelGameEvent("GameRestarted");
             } else {
-                putPixelEvent("GameStarted");
+                putPixelGameEvent("GameStarted");
             }
             return;
         }
 
         if (isEndOfGame(gameType, time)) {
-            putPixelEvent("GameFinished");
+            putPixelGameEvent("GameFinished");
             return;
         }
 
         if (time === 60) {
-            putPixelEvent("GamePlaying");
+            putPixelGameEvent("GamePlaying");
         }
 
         if (time === 120) {
-            putPixelEvent("GamePlaying");
+            putPixelGameEvent("GamePlaying");
         }
 
-        function putPixelEvent(eventName) {
+        function putPixelGameEvent(eventName) {
             fbq('trackCustom', eventName, {
+                clientId,
+                sessionId,
+                content_name: gameType,
+                content_category: "game",
+                gameCounter,
+                time,
+                score,
+            });
+        }
+
+        function putGAGameEvent(eventName) {
+            gtag('event', eventName, {
                 clientId,
                 sessionId,
                 content_name: gameType,
@@ -210,9 +224,27 @@
         if (!clientId) {
             clientId = createUUID();
             window.localStorage.setItem(clientIdKey, clientId);
-            // todo pixel new user
+            gtag('event', 'NewUserEntered', {
+                clientId,
+                sessionId,
+                content_category: "game",
+            });
+            fbq('trackCustom', 'NewUserEntered', {
+                clientId,
+                sessionId,
+                content_category: "game",
+            });
         } else {
-            // todo pixel returning user
+            gtag('event', 'ReturningUserEntered', {
+                clientId,
+                sessionId,
+                content_category: "game",
+            });
+            fbq('trackCustom', 'NewUserEntered', {
+                clientId,
+                sessionId,
+                content_category: "game",
+            });
         }
         return clientId;
     }
