@@ -4,8 +4,8 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="pragma" content="no-cache" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta charset="utf-8" />
     <style>
@@ -112,6 +112,12 @@
     <!-- End NES.CSS -->
     <!-- Custom CSS -->
     <style>
+        html {
+            min-width: 1080px;
+            height: 100%;
+            margin: 0;
+        }
+
         body {
             background-image: url("asset_background_space_pixelart.png");
             background-attachment: fixed;
@@ -204,9 +210,9 @@
             width: 520px;
             display: inline-block;
             margin: 0 auto;
-            -webkit-box-shadow: 0px 0px 50px 0px rgba(237,38,255,0.33);
-            -moz-box-shadow: 0px 0px 50px 0px rgba(237,38,255,0.33);
-            box-shadow: 0px 0px 50px 0px rgba(237,38,255,0.33);
+            -webkit-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
+            -moz-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
+            box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
         }
     </style>
     <!-- End Custom CSS -->
