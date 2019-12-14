@@ -60,8 +60,42 @@
                             0.001
                         ],
                         "colorGridBackground": [
-                            "#ec008cCC",
+                            "#090f3bCC",
                             0.001
+                        ],
+                        "angle": [
+                            2160,
+                            0.25
+                        ],
+                        "verticalScreens": [
+                            4,
+                            4
+                        ],
+                        "horizontalScreens": [
+                            4,
+                            4
+                        ],
+                        "isGridWheelEnabled": false,
+                        "swingGrid": true
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 0.5,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "verticalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "horizontalScreens": [
+                            1,
+                            0.01
                         ]
                     }
                 }
@@ -2893,6 +2927,19 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 130,
+        "events": [
+            {
+                "type": "JumbotronEvent",
+                "data": {
+                    "message": "TWOJE DZBANY",
+                    "handlerName": "scoreboard",
+                    "duration": -1
                 }
             }
         ]
