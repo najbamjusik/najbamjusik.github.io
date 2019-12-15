@@ -145,7 +145,7 @@
                 "type": "JumbotronEvent",
                 "data": {
                     "message": "ZBIERAJ PUNKTY\nDOJRZALOSCI",
-                    "handlerName": "message",
+                    "handlerName": "scoreboard",
                     "duration": 1.6
                 }
             }
