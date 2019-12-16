@@ -63,10 +63,6 @@
                             "#090f3bCC",
                             0.001
                         ],
-                        "angle": [
-                            2160,
-                            0.25
-                        ],
                         "verticalScreens": [
                             4,
                             4
@@ -76,7 +72,7 @@
                             4
                         ],
                         "isGridWheelEnabled": false,
-                        "swingGrid": true
+                        "swingGrid": false
                     }
                 }
             }
