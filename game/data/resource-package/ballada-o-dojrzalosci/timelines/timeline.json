@@ -3063,6 +3063,42 @@
         ]
     },
     {
+        "time": 111,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "channels": [
+                            24,
+                            0.05
+                        ],
+                        "offsetBottom": [
+                            0.1,
+                            0.005
+                        ],
+                        "offsetTop": [
+                            0.01,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.1,
+                            0.005
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.005
+                        ],
+                        "colorGridBackground": [
+                            "#0E4D04FF",
+                            0.02
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 116,
         "events": [
             {
