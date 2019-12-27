@@ -38,5 +38,9 @@
 	"view.minGuiHeight": 360,
 	"view.minGuiWidth": 480,
 	"view.minViewHeight": 360,
-	"view.minViewWidth": 480
+	"view.minViewWidth": 480,
+	"game.hud.primaryFontSize": 2,
+	"game.hud.secondaryFontSize": 1,
+	"game.hud.location": "bottom",
+	"game.hud.fontFamily": "asset_font_04b20"
 }
