@@ -1,0 +1,121 @@
+
+{
+    "system.debugEnabled": true,
+
+    "view.defaultViewWidth": 480,
+    "view.defaultViewHeight": 270,
+    "view.defaultGuiWidth": 960,
+    "view.defaultGuiHeight": 540,
+    "view.portraitMode": true,
+
+    "bossRecord.bossName": "bossName",
+    "bossRecord.PointsRecord": "pointsRecord",
+    "bossRecord.timeRecord": "timeRecord",
+    "loaderIntent.playerStates": "playerStates",
+    "loaderIntent.targetMap": "targetMap",
+    "loaderIntent.previousMap": "previousMap",    
+    "map.name": "name",
+    "map.width": "width",
+    "map.height": "height",
+    "map.cellSize": "cellSize",
+    "map.tilesetLayers": "tilesetLayers",
+    "map.mapInstances": "mapInstances",
+    "mapInstance.xPos": "xPos",
+    "mapInstance.yPos": "yPos",
+    "mapInstance.spriteAsset": "spriteAsset",
+    "mapInstance.xScale": "xScale",
+	"mapInstance.yScale": "yScale",
+	"mapInstance.angle": "angle",
+    "mapInstance.name": "name",
+    "mapInstance.parameters": "parameters",
+    "mapInstance.layerName": "layerName",
+    "playerProfile.profileName": "profileName",
+	"playerProfile.creationDate": "creationDate",
+	"playerProfile.lastPlayedDate": "lastPlayedDate",
+	"playerProfile.currentWorld": "currentWorld",
+	"playerProfile.currentMap": "currentMap",
+	"playerProfile.availableWorlds": "availableWorlds",
+    "playerProfile.worldRecords": "worldRecords",
+    "playerState.playerId": "playerId",
+    "playerState.health": "health",
+    "playerState.healthMax": "healthMax",
+    "playerState.score": "score",
+    "playerState.time": "time",
+    "tilesetLayer.assetName": "assetName",
+    "tilesetLayer.data": "data",
+    "tilesetLayer.layerName": "layerName",
+    "tilesetLayer.level": "level",
+    "tilesetLayer.depth": "depth",
+    "tilesetLayer.tileSize": "tileSize",
+	"world.worldName": "worldName",
+	"world.worldTokens": "worldTokens",
+	"world.worldMaps": "worldMaps",
+    "world.worldBosses": "worldBosses",
+    "worldRecord.worldName": "worldName",
+    "worldRecord.PointsRecord": "pointsRecord",
+    "worldRecord.timeRecord": "timeRecord",
+    "worldRecord.played": "played",
+    "worldRecord.foundTokens": "foundTokens",
+    "worldRecord.bossRecords": "bossRecords",
+
+    "player.hspdMax": 2.0,
+    "player.vspdMax": 16,
+    "player.grav": 0.2,
+    "player.jumpHigh": 4.5,
+    "player.runAway": 0,
+    "player.airSpeed": 2.25,
+    "player.airAcceleration": 0.15,
+    "player.airFriction": 0.1,
+    "player.groundSpeed": 2,
+    "player.groundAcceleration": 0.2,
+    "player.groundFriction": 0.15,
+    "player.waterSpeed": 1.5,
+    "player.waterAcceleration": 0.1,
+    "player.waterFriction": 0.05,
+    "player.wallJump": 4,
+    "player.wallJumpUp": 1.75,
+
+    "jumpPad.defaultJumpHeight": 7,
+    "jumpPad.parameter.jumpHigh": "jumpHigh",
+
+    "platformMoving.parameter.spriteAsset": "spriteAsset",
+    "platformMoving.parameter.speed": "speed",
+    "platformMoving.parameter.speedMin": "speedMin",
+    "platformMoving.parameter.speedMax": "speedMax",
+    "platformMoving.parameter.speedAcceleration": "speedAcceleration",
+    "platformMoving.parameter.direction": "direction",
+    "platformMoving.parameter.timer": "timer",
+
+    "platformMoving.vertical.defaultDirection": 1,
+    "platformMoving.vertical.defaultSpeedMin": 1,
+    "platformMoving.vertical.defaultSpeedMax": 1,
+    "platformMoving.vertical.defaultSpeedAcceleration": 1,
+    "platformMoving.horizontal.defaultTimer": 0,
+
+    "platformMoving.horizontal.defaultDirection": 1,
+    "platformMoving.horizontal.defaultSpeedMin": 1,
+    "platformMoving.horizontal.defaultSpeedMax": 1,
+    "platformMoving.horizontal.defaultSpeedAcceleration": 1,
+    "platformMoving.vertical.defaultTimer": 0,
+
+    "trolley.defaultSpeedMax": 4.0,
+    "trolley.defaultCenterPosition": 8.0,
+    "trolley.parameter.spriteAsset": "spriteAsset",
+    "trolley.parameter.speedMax": "speedMax",
+    "trolley.parameter.centerOffset": "centerOffset"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
