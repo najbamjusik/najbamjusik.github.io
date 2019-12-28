@@ -2795,7 +2795,7 @@
                             },
                             "speedValues": [
                                 0.007,
-                                0.05,
+                                0.009,
                                 0.005
                             ],
                             "texts": [
@@ -2811,7 +2811,7 @@
                             },
                             "speedValues": [
                                 0.007,
-                                0.05,
+                                0.009,
                                 0.005
                             ],
                             "texts": [
@@ -3348,7 +3348,7 @@
                 "data": {
                     "message": "TWOJE PUNKTY DOJRZALOSCI",
                     "handlerName": "scoreboard",
-                    "duration": 360
+                    "duration": -1
                 }
             }
         ]
