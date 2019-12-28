@@ -42,5 +42,6 @@
 	"game.hud.primaryFontSize": 2,
 	"game.hud.secondaryFontSize": 1,
 	"game.hud.location": "bottom",
-	"game.hud.fontFamily": "asset_font_04b20"
+	"game.hud.fontFamily": "asset_font_04b20",
+	"game.debug.loadOnStart": false
 }

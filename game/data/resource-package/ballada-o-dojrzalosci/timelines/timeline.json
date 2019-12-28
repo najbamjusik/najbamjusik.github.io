@@ -145,7 +145,7 @@
                 "type": "JumbotronEvent",
                 "data": {
                     "message": "ZBIERAJ PUNKTY\nDOJRZALOSCI",
-                    "handlerName": "scoreboard",
+                    "handlerName": "message",
                     "duration": 1.6
                 }
             }
@@ -200,6 +200,22 @@
         ]
     },
     {
+        "time": 10.5,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "topLinePosition": [
+                            0.8,
+                            0.0005
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 20,
         "events": [
             {
@@ -222,6 +238,38 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 20.7,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "topLinePosition": [
+                            0.3,
+                            0.016
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 21.37,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "topLinePosition": [
+                            0.5,
+                            0.001
+                        ]
+                    }
                 }
             }
         ]
@@ -2158,31 +2206,6 @@
         ]
     },
     {
-        "time": 46.7,
-        "events": [
-            {
-                "type": "ParticleEvent",
-                "data": {
-                    "particle": "particle_fusion",
-                    "fields": {
-                        "system": "foreground",
-                        "amount": 50,
-                        "duration": 5,
-                        "emitterInterval": 0.2,
-                        "positionBegin": [
-                            0.5,
-                            0.5
-                        ],
-                        "positionEnd": [
-                            0.5,
-                            0.5
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
         "time": 47,
         "events": [
             {
@@ -2771,7 +2794,25 @@
                                 "name": "good"
                             },
                             "speedValues": [
-                                0.007
+                                0.007,
+                                0.05,
+                                0.005
+                            ],
+                            "texts": [
+                                "XDDD",
+                                "lol",
+                                "kawal"
+                            ]
+                        },
+                        {
+                            "sprite": "asset_sprite_question",
+                            "type": {
+                                "name": "bad"
+                            },
+                            "speedValues": [
+                                0.007,
+                                0.05,
+                                0.005
                             ],
                             "texts": [
                                 "XDDD",
@@ -2800,14 +2841,14 @@
         ]
     },
     {
-        "time": 70,
+        "time": 67,
         "events": [
             {
                 "type": "ShroomEmitterEvent",
                 "data": {
                     "amount": 1,
-                    "duration": 10,
-                    "interval": 0.9,
+                    "duration": 13,
+                    "interval": 0.6,
                     "templates": [
                         {
                             "sprite": "asset_sprite_bugz",
@@ -2816,7 +2857,10 @@
                                 "randomShader": true
                             },
                             "speedValues": [
-                                0.005
+                                0.005,
+                                0.01,
+                                0.008,
+                                0.015
                             ],
                             "texts": [
                                 "boss"
@@ -2824,7 +2868,12 @@
                         }
                     ]
                 }
-            },
+            }
+        ]
+    },
+    {
+        "time": 70,
+        "events": [
             {
                 "type": "BossEvent",
                 "data": {
@@ -3063,6 +3112,42 @@
         ]
     },
     {
+        "time": 110,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 16,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_brokulowyatak",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.015,
+                                0.014,
+                                0.012,
+                                0.011,
+                                0.01,
+                                0.009,
+                                0.008
+                            ],
+                            "texts": [
+                                "boli",
+                                "korpo",
+                                "garb"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
         "time": 111,
         "events": [
             {
@@ -3094,36 +3179,6 @@
                             0.02
                         ]
                     }
-                }
-            }
-        ]
-    },
-    {
-        "time": 116,
-        "events": [
-            {
-                "type": "ShroomEmitterEvent",
-                "data": {
-                    "amount": 1,
-                    "duration": 10,
-                    "interval": 0.6,
-                    "templates": [
-                        {
-                            "sprite": "asset_sprite_brokulowyatak",
-                            "type": {
-                                "name": "bad",
-                                "randomShader": true
-                            },
-                            "speedValues": [
-                                0.014
-                            ],
-                            "texts": [
-                                "boli",
-                                "korpo",
-                                "garb"
-                            ]
-                        }
-                    ]
                 }
             }
         ]
