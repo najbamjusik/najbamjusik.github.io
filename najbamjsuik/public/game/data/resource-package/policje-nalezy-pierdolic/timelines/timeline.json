@@ -1,0 +1,2943 @@
+[
+    {
+        "time": 0,
+        "events": [
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "LED",
+                    "duration": 1.5,
+                    "data": {
+                        "brightness": [
+                            0.5,
+                            1.5,
+                            0.001
+                        ],
+                        "ledSize": [
+                            1,
+                            100,
+                            0.01
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "BossEvent",
+                "data": {
+                    "type": "dzban"
+                }
+            },
+            {
+                "type": "AudioEvent",
+                "data": {
+                    "assetName": "asset_ost_policje_nalezy_pierdolic",
+                    "priority": 100,
+                    "loop": true
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "channels": [
+                            8,
+                            0.05
+                        ],
+                        "offsetBottom": [
+                            0.1,
+                            0.001
+                        ],
+                        "offsetTop": [
+                            0.1,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.1,
+                            0.001
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.001
+                        ],
+                        "colorGridBackground": [
+                            "#090f3bCC",
+                            0.001
+                        ],
+                        "verticalScreens": [
+                            4,
+                            4
+                        ],
+                        "horizontalScreens": [
+                            4,
+                            4
+                        ],
+                        "isGridWheelEnabled": false,
+                        "swingGrid": false
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 0.5,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "verticalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "horizontalScreens": [
+                            1,
+                            0.01
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 1.8,
+        "events": [
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "Sketch",
+                    "duration": 0.9,
+                    "data": {
+                        "intensity": [
+                            0.6,
+                            1.8,
+                            0.02
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "Wave",
+                    "duration": 1.9,
+                    "data": {
+                        "amount": [
+                            20,
+                            80,
+                            0.2,
+                            0.02
+                        ],
+                        "distortion": 20,
+                        "speed": [
+                            0.05
+                        ],
+                        "time": [
+                            0,
+                            1000,
+                            1
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 3.2,
+        "events": [
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "Thermal",
+                    "duration": 3.4,
+                    "data": {}
+                }
+            },
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "Wave",
+                    "duration": 1.4,
+                    "data": {
+                        "amount": [
+                            20,
+                            80,
+                            0.2,
+                            0.02
+                        ],
+                        "distortion": 20,
+                        "speed": [
+                            0.05
+                        ],
+                        "time": [
+                            0,
+                            1000,
+                            1
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 4.8,
+        "events": [
+            {
+                "type": "ShaderEvent",
+                "data": {
+                    "name": "LED",
+                    "duration": 0.1,
+                    "data": {
+                        "brightness": 1.5,
+                        "ledSize": [
+                            20,
+                            40,
+                            0.0005
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 5,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 9,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 6,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "colorGridBackground": [
+                            "#090717CC",
+                            0.001
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 12,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_dog",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite__emoji_policecar",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 24,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_1",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_open_book",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_police_officer",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 24.3,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_2",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 24.6,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_3",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 24.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_4",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 25.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_fck_5",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 38,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_policeman",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.01
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 50,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_wegetable_1",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009,
+                                0.04
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_wegetable_2",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.01,
+                                0.03
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 60,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 2,
+                    "duration": 4,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_teacher",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 64,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 2,
+                    "duration": 4,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_student",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 68,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 2,
+                    "duration": 4,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_princess",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 72,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 4,
+                    "interval": 0.7,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_backpack",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 4,
+                    "interval": 0.7,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_handbag",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.01
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 76,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 2,
+                    "duration": 4,
+                    "interval": 0.7,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_lips",
+                            "type": {
+                                "name": "god",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 80,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 4,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_lips",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.008
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 2,
+                    "interval": 0.5,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_poodl",
+                            "type": {
+                                "name": "god",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.009
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 85,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 85.4,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 10,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_doggyface",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 87,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 89,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 91,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 93,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.6,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_emoji_policedoggycar",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.006
+                        ],
+                        "texts": [
+                            "przypal",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 97,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_policeman",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.007,
+                                0.007,
+                                0.006,
+                                0.008,
+                                0.007,
+                                0.004
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite__emoji_policecar",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_poodl",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009,
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 109,
+        "events": [
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_police_officer",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.007,
+                                0.007,
+                                0.006,
+                                0.008,
+                                0.007,
+                                0.002
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 1,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_hot_dog",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.009
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.6,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_emoji_policedoggycar",
+                            "type": {
+                                "name": "bad",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.011,
+                                0.013
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ShroomEmitterEvent",
+                "data": {
+                    "amount": 1,
+                    "duration": 12,
+                    "interval": 0.85,
+                    "templates": [
+                        {
+                            "sprite": "asset_sprite_food_dzban",
+                            "type": {
+                                "name": "good",
+                                "randomShader": false
+                            },
+                            "speedValues": [
+                                0.006
+                            ],
+                            "texts": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 130,
+        "events": [
+            {
+                "type": "JumbotronEvent",
+                "data": {
+                    "message": "TWOJE DZBANY",
+                    "handlerName": "scoreboard",
+                    "duration": -1
+                }
+            }
+        ]
+    }
+]
