@@ -21,6 +21,10 @@ function appendJSToDOM(url, location, onLoadCallback) {
     scriptTag.onload = onLoadCallback;
 }
 
+function getGameContainer() {
+    return document.getElementById("game-container");
+}
+
 function getCanvasContainter() {
     return document.getElementById("gm4html5_div_id");
 }
@@ -48,9 +52,9 @@ function runGame() {
 }
 
 function showGameContainer() {
-    const gameCanvasContainer = getCanvasContainter();
+    const gameContainer = getGameContainer();
     const INVISIBLE_CSS_CLASS = "invisible";
-    gameCanvasContainer.classList.remove(INVISIBLE_CSS_CLASS);
+    gameContainer.classList.remove(INVISIBLE_CSS_CLASS);
     const infoContainer = getInfoContainer();
     infoContainer.classList.add(INVISIBLE_CSS_CLASS);
 }
