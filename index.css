@@ -1,3 +1,9 @@
+:root {
+    --primary-color: rgba(255, 0, 255, 0.33);
+    --header-background-color: rgba(255, 226, 36, 1);
+    --button-collor: rgba(0, 255, 0, 1);
+}
+
 body {
     color: #cccccc;
     margin: 0px;
@@ -63,6 +69,13 @@ canvas {
     margin: 0 auto;
 }
 
+.info-container-play-btn {
+    margin: 15px;
+    padding: 15px;
+    color: var(--primary-color);
+    background-color: var(--button-collor);
+}
+
 .game-container {
     width: 100%;
     text-align: center;
@@ -94,19 +107,11 @@ canvas {
     text-align: center;
     color: #d6d6d6;
 }
-/*.game-canvas-container {*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    display: inline-block;*/
-/*    margin: 0 auto;*/
-/*    padding: 50px;*/
-/*    background-color: #000000;*/
-/*}*/
 
 .box-shadow {
-    -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
-    -moz-box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
-    box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
+    -webkit-box-shadow: 0px 0px 50px 10px var(--primary-color);
+    -moz-box-shadow: 0px 0px 50px 10px var(--primary-color);
+    box-shadow: 0px 0px 50px 10px var(--primary-color);
 }
 
 .header-title {
@@ -122,18 +127,18 @@ canvas {
 .header-title-container {
     width: 100%;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-content {
-    width: 520px;
+    width: 420px;
     display: inline-block;
     margin: 0 auto;
     background-color: #fff478;
-    -webkit-box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
-    -moz-box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
-    box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
+    -webkit-box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
+    -moz-box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
+    box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
 }
 
 .wrapper-post-content {
@@ -147,9 +152,6 @@ canvas {
     width: 520px;
     display: inline-block;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
-    -moz-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
-    box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
 }
 
 .invisible {
