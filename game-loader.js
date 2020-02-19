@@ -14,12 +14,25 @@ function enableFullscreen() {
     }
 }
 
+function appendJSToDOM(url, location, onLoadCallback) {
+    const scriptTag = document.createElement("script");
+    scriptTag.src = url;
+    location.appendChild(scriptTag);
+    scriptTag.onload = onLoadCallback;
+}
+
 function getCanvasContainter() {
     return document.getElementById("gm4html5_div_id");
 }
 
 function getInfoContainer() {
     return document.getElementById("info-container");
+}
+
+function spawnGameCanvas() {
+    appendJSToDOM("game/ballada-o-dojrzalosci.js", document.body, () => {
+        console.log("GAME LOADED");
+    });
 }
 
 function runGame() {
@@ -30,9 +43,12 @@ function runGame() {
     gameCanvas.height = 540;
     gameCanvasContainer.appendChild(gameCanvas);
 
-    global.GameMaker_Init();
-    // enableFullscreen();
-console.log("ASD");
+    GameMaker_Init();
+    showGameContainer();
+}
+
+function showGameContainer() {
+    const gameCanvasContainer = getCanvasContainter();
     const INVISIBLE_CSS_CLASS = "invisible";
     gameCanvasContainer.classList.remove(INVISIBLE_CSS_CLASS);
     const infoContainer = getInfoContainer();
