@@ -33,7 +33,7 @@ function getInfoContainer() {
     return document.getElementById("info-container");
 }
 
-function spawnGameCanvas() {
+function downloadGameSource() {
     appendJSToDOM("game/ballada-o-dojrzalosci.js", document.body, () => {
         console.log("GAME LOADED");
     });
