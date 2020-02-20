@@ -86,6 +86,7 @@
 <div class="game-container invisible" id="game-container">
     <div class="game-canvas box-shadow gm4html5_div_class" id="gm4html5_div_id">
     </div>
+    <button onclick="takeScreenshot()">ZROB SKRINA WAL DRINA</button>
 </div>
 
 
@@ -104,8 +105,11 @@
 
 <script type="text/javascript" src="game-loader.js"></script>
 <script type="text/javascript" src="tracing.js"></script>
+<script type="text/javascript" src="screenshot.js"></script>
+<script type="text/javascript" src="html2canvas.min.js"></script>
 <script src="//www.instagram.com/embed.js"></script>
 <script>window.onload = downloadGameSource;</script>
+<canvas class="invisible" id="canvas-temp"></canvas>
 </body>
 
 </html>
