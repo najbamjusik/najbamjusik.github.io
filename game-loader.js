@@ -34,7 +34,7 @@ function getInfoContainer() {
 }
 
 function downloadGameSource() {
-    appendJSToDOM("game/spaace-rap.js", document.body, () => {
+    appendJSToDOM("game/ballada-o-dojrzalosci.js", document.body, () => {
         console.log("GAME LOADED");
     });
 }
