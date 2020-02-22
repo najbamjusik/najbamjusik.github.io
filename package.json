@@ -19,5 +19,6 @@
   "homepage": "https://github.com/najbamjusik/najbamjusik.github.io#readme",
   "devDependencies": {
     "http-server": "^0.12.1"
-  }
+  },
+  "dependencies": {}
 }

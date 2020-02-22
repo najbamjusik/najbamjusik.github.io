@@ -6,6 +6,11 @@
     --text-secondary-color: #d6d6d6;
 }
 
+html {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     color: var(--text-primary-color);
     background-color: black;
@@ -21,18 +26,32 @@ body {
     background-size: cover;
 }
 
-html {
-    min-width: 1080px;
-    height: 100%;
-    margin: 0;
-}
-
 canvas {
     image-rendering: optimizeSpeed;
     -webkit-interpolation-mode: nearest-neighbor;
     margin: 0px;
     padding: 0px;
     border: 0px;
+}
+
+@media all and (min-width: 551px) {
+    .desktop-br {
+        display: inline;
+    }
+
+    .mobile-br {
+        display: none;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .desktop-br {
+        display: none;
+    }
+
+    .mobile-br {
+        display: inline;
+    }
 }
 
 :-webkit-full-screen #canvas {
@@ -51,15 +70,15 @@ canvas {
 }
 
 .page-title {
-    font-size: 2.5vw;
+    font-size: max(24px, 2.5vw);
     text-align: center;
     color: var(--text-primary-color);
 }
 
 .page-subtitle {
-    font-size: 1vw;
+    font-size: max(12px, 1.5vw);
     text-align: center;
-    color: var(--text-primary-color);
+    color: var(--text-secondary-color);
 }
 
 .info-container {
@@ -69,44 +88,48 @@ canvas {
     padding-bottom: 50px;
     background-color: black;
     width: 75%;
+    max-width: 1024px;
+    min-width: 375px;
     margin: 0 auto;
 }
 
 .info-header {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: max(12px, min(26px, 2.0vw));
     padding: 10px auto;
     color: var(--text-primary-color);
 }
 
 .info-header > img {
     width: 25%;
-    margin: 30px;
+    margin: 0px;
 }
 
 .info-content {
     text-align: left;
-    margin: auto 120px;
+    margin: auto min(10%, 120px);
     list-style-type: decimal;
 }
 
 .info-point {
-    font-size: 1vw;
+    font-size: max(10px, min(20px, 1.5vw));
     margin: 20px auto;
     color: var(--text-primary-color);
 }
 
 .info-rules {
-    font-size: 1vw;
+    font-size: max(10px, min(18px, 1.0vw));
     padding: 30px auto;
     color: var(--text-primary-color);
 }
 
 .info-container-play-btn {
+    width: 40%;
     margin: 45px;
-    padding: 15px;
-    color: var(--primary-color);
+    padding: 30px;
     background-color: var(--button-collor);
+    font-size: max(12px, min(26px, 2.0vw));
+    color: var(--primary-color);
 }
 
 .game-container {
@@ -139,6 +162,7 @@ canvas {
 }
 
 .header-title-container {
+    margin: 30px auto;
     width: 100%;
     text-align: center;
     padding-top: 20px;
@@ -146,7 +170,7 @@ canvas {
 }
 
 .header-content {
-    width: 420px;
+    width: min(420px, 50%);
     display: inline-block;
     margin: 0 auto;
     background-color: #fff478;
