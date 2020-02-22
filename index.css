@@ -151,17 +151,7 @@ canvas {
     box-shadow: 0px 0px 50px 10px var(--primary-color);
 }
 
-.header-title {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1vw;
-    text-align: center;
-    color: #000000;
-}
-
-.header-title-container {
+.feed-header-container {
     margin: 30px auto;
     width: 100%;
     text-align: center;
@@ -169,14 +159,34 @@ canvas {
     padding-bottom: 20px;
 }
 
-.header-content {
-    width: min(420px, 50%);
+.feed-header-content {
+    width: min(420px, max(320px, 50%));
     display: inline-block;
     margin: 0 auto;
     background-color: #fff478;
     -webkit-box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
     -moz-box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
     box-shadow: inset 0px 0px 50px 10px var(--header-background-color);
+}
+
+.feed-header-title-emoji {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: max(12px, min(26px, 3.5vw));
+    text-align: center;
+    color: #000000;
+}
+
+.feed-header-title-emoji {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: max(14px, min(20px, 3.0vw));
+    text-align: center;
+    color: #000000;
 }
 
 .wrapper-post-content {
@@ -187,9 +197,21 @@ canvas {
 }
 
 .post-content {
-    width: 520px;
     display: inline-block;
     margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+.post-content-yt {
+    height: 16vmax;
+    width: 32vmax;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-content-instagram {
+    width: min(95vw, 540px);
+    overflow: hidden;
 }
 
 .invisible {
