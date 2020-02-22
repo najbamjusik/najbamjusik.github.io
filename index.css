@@ -2,16 +2,19 @@
     --primary-color: rgba(255, 0, 255, 0.33);
     --header-background-color: rgba(255, 226, 36, 1);
     --button-collor: rgba(0, 255, 0, 1);
+    --text-primary-color: #cccccc;
+    --text-secondary-color: #d6d6d6;
 }
 
 body {
-    color: #cccccc;
+    color: var(--text-primary-color);
+    background-color: black;
     margin: 0px;
     padding: 0px;
     border: 0px;
     font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
     text-align: center;
-    background-image: url("asset_background_space_pixelart.png");
+    background-image: url("resources/asset_background_space_pixelart.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
@@ -48,15 +51,15 @@ canvas {
 }
 
 .page-title {
-    font-size: 36px;
+    font-size: 2.5vw;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-primary-color);
 }
 
 .page-subtitle {
-    font-size: 12px;
+    font-size: 1vw;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-primary-color);
 }
 
 .info-container {
@@ -65,12 +68,42 @@ canvas {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: black;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
+.info-header {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 10px auto;
+    color: var(--text-primary-color);
+}
+
+.info-header > img {
+    width: 25%;
+    margin: 30px;
+}
+
+.info-content {
+    text-align: left;
+    margin: auto 120px;
+    list-style-type: decimal;
+}
+
+.info-point {
+    font-size: 1vw;
+    margin: 20px auto;
+    color: var(--text-primary-color);
+}
+
+.info-rules {
+    font-size: 1vw;
+    padding: 30px auto;
+    color: var(--text-primary-color);
+}
+
 .info-container-play-btn {
-    margin: 15px;
+    margin: 45px;
     padding: 15px;
     color: var(--primary-color);
     background-color: var(--button-collor);
@@ -89,25 +122,6 @@ canvas {
     background-color: #000000;
 }
 
-.game-header {
-    width: 100%;
-    text-align: center;
-    min-height: 66px;
-    background-image: url("asset_spaace_loader_logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.game-hint {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 14px;
-    text-align: center;
-    color: #d6d6d6;
-}
-
 .box-shadow {
     -webkit-box-shadow: 0px 0px 50px 10px var(--primary-color);
     -moz-box-shadow: 0px 0px 50px 10px var(--primary-color);
@@ -119,7 +133,7 @@ canvas {
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 1vw;
     text-align: center;
     color: #000000;
 }
