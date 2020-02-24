@@ -43,5 +43,17 @@
 	"game.hud.secondaryFontSize": 1,
 	"game.hud.location": "bottom",
 	"game.hud.fontFamily": "asset_font_04b20",
-	"game.debug.loadOnStart": false
+	"game.debug.loadOnStart": false,
+	"gameplayrecorder.mode": "off",
+	"lyricsRenderer.enable": false,
+	"shaderCRTUniformValueEnableRadialDistortion": 1.0,
+	"shaderCRTUniformValueEnableBorder": 1.0,
+	"shaderCRTUniformValueEnableSeparation": 1.0,
+	"shaderCRTUniformValueEnableScanlines": 1.0,
+	"shaderCRTUniformValueEnableNoise": 1.0,
+	"shaderCRTUniformValueDistortionAmount": 0.3,
+	"shaderCRTUniformValueCornerSize": 0.1,
+	"shaderCRTUniformValueCornerSmoothness": 64.0,
+	"shaderCRTUniformValueBrightness": 1.0,
+	"shaderCRTUniformValueNoiseSize": 0.16
 }

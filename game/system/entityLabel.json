@@ -43,10 +43,11 @@
 	"resourcePackEntry.options": "options",
 	"windowGridValue.type": "type",
 	"windowGridValue.color": "color",
-	
+
 	"audioEvent.assetName": "assetName",
 	"audioEvent.loop": "loop",
 	"audioEvent.priority": "priority",
+	"audioEvent.trackPosition": "trackPosition",
 	"boss.type": "type",
 	"boss.state": "state",
 	"boss.handler": "handler",
