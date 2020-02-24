@@ -4,6 +4,23 @@ const DZBAN_POLICJA = "DZBAN_POLICJA";
 const sessionId = createUUID();
 const clientId = initClientId();
 
+/***
+ *
+ * generateUuid, store
+ * UerEntered, count
+ * rules
+ * scrolledDownOnInfo
+ * playButtonClicked
+ * GameEvents
+ *      GameStarted, count
+ *      GamePlaying
+ *      GameFinished
+ *      GameScreenShoot
+ * scrolledDownOnGame
+ */
+
+
+
 var gameEvent = function (rawGameType, rawEventName, rawParams) {
     const gameType = getGameType(rawGameType);
     if (!gameType) {
