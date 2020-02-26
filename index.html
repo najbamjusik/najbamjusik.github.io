@@ -67,14 +67,14 @@
 <body>
 
 
-<div class="page-title-container">
+<div class="section-page-title-container">
     <p class="page-title"><span class="desktop-br">💿💿💿 </span>najbamjusik.pl<span class="desktop-br"> 💿💿💿</span>
     </p>
     <p class="page-subtitle">krulig - ballada o dojrzalosci</p>
 </div>
 
 
-<div class="info-container box-shadow" id="info-container">
+<div class="section-info-container box-shadow" id="section-info-container">
     <div class="info-header">
         <p>Wygraj emotional feelings ep IV!</p>
         <img src="resources/mockup_1_kwadrat-black.jpg" alt="Emotional Feelings EP IV"/>
@@ -96,10 +96,12 @@
 </div>
 
 
-<div class="game-container invisible" id="game-container">
-    <div class="game-canvas box-shadow gm4html5_div_class" id="gm4html5_div_id">
+<div class="section-game-container invisible" id="section-game-container">
+    <div class="game-container box-shadow">
+        <div class="game-canvas-container game-canvas-container-media" id="game-canvas-container"></div>
     </div>
     <div>
+        <button onclick="enableFullscreen()">FULL SCREEN</button>
         <button onclick="takeScreenshot()">ZROB SKRINA WAL DRINA</button>
     </div>
 </div>
@@ -108,10 +110,10 @@
 <script type="text/javascript" src="tracing.js"></script>
 <script type="text/javascript" src="screenshot.js"></script>
 <script type="text/javascript" src="html2canvas.min.js"></script>
-<script src="//www.instagram.com/embed.js"></script>
 <script>window.onload = downloadGameSource;</script>
+<script src="//www.instagram.com/embed.js"></script>
 
-<div class="feed-container">
+<div class="feed-section-container">
     <div class="feed-header-container">
         <div class="feed-header-content">
             <p class="feed-header-title-emoji">⬇️⬇️⬇️</p>
