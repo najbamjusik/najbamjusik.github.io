@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "packageName": "com.yeahorizon.spaacerap",
+            "artifactName": "SpaaceRap",
+            "context": "SpaaceRap",
+            "scenes": [
+                "SceneIntro",
+                "SceneMenu",
+                "SceneGame"
+            ]
+        }
+    ]
+}

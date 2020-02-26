@@ -22,7 +22,7 @@ function getCanvas() {
 }
 
 function downloadGameSource() {
-    appendJSToDOM("game/ballada-o-dojrzalosci.js", document.body, () => {
+    appendJSToDOM("game/spaace-rap.js", document.body, () => {
         console.log("GAME LOADED");
     });
 }
@@ -32,6 +32,9 @@ function runGame() {
     if (!getCanvas()) {
         const gameCanvas = document.createElement("canvas");
         gameCanvas.id = "canvas";
+        console.log(gameCanvasContainer.getBoundingClientRect().width);
+        gameCanvas.width = gameCanvasContainer.clientWidth;
+        gameCanvas.height = gameCanvasContainer.clientHeight;
         gameCanvasContainer.appendChild(gameCanvas);
     }
 
