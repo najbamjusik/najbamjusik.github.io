@@ -8074,7 +8074,7 @@ function getCanvasSize() {
         console.error(getFormattedLog("[JSUtil] game-canvas-container wasn't found"));
         return "{}";
     } else {
-        return JSON.stringify({ width: gmCanvas.width, height: gmCanvas.height });
+        return JSON.stringify({ width: gmCanvas.offsetWidth, height: gmCanvas.offsetHeight });
     }
 
 }
