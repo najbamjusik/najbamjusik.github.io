@@ -22,7 +22,7 @@ function getCanvas() {
 }
 
 function downloadGameSource() {
-    appendJSToDOM("game/ballada-o-dojrzalosci.js", document.body, () => {
+    appendJSToDOM("game/spaace-rap.js", document.body, () => {
         console.log("GAME LOADED");
     });
 }
