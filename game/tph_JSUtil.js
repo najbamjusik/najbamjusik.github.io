@@ -8047,6 +8047,8 @@ const html2canvas = require('html2canvas');
 // GameMaker exports
 global.jsUtilFBPixelEvent  = gameEventProxy;
 global.jsUtilGetCanvasSize = getCanvasSize;
+global.jsUtilGetCanvasOffsetX = getCanvasOffsetX;
+global.jsUtilGetCanvasOffsetY = getCanvasOffsetY;
 global.jsUtilIsFullscreen = isFullscreen;
 global.jsUtilIsMobile = isMobile;
 global.jsUtilSetCanvasVisibility = setCanvasVisibility
@@ -8080,16 +8082,33 @@ function getCanvasSize() {
 }
 
 /**
+ * @GMFunctionName jsUtilGetCanvasOffsetX
+ * @return {Integer} offsetX
+ */
+function getCanvasOffsetX() {
+    return Math.round(document.getElementById("canvas").getBoundingClientRect().x + window.scrollX);
+}
+
+/**
+ * @GMFunctionName jsUtilGetCanvasOffsetY
+ * @return {Integer} offsetY()
+ */
+function getCanvasOffsetY() {
+    return Math.round(document.getElementById("canvas").getBoundingClientRect().y + window.scrollY);
+}
+
+/**
  * @GMFunctionName jsUtilIsFullscreen
+ * @return {String} booleanString
  */
 function isFullscreen() {
     console.debug(getFormattedLog("[JSUtil]", "isFullscreen"));
-    return !(
+    return (!(
             !document.isFullScreen && 
             !document.fullscreenElement && 
             !document.webkitFullscreenElement && 
             !document.mozFullScreenElement && 
-            !document.msFullscreenElement);
+            !document.msFullscreenElement)) ? "true" : "false";
 }
 
 /**
@@ -8104,7 +8123,7 @@ function isMobile() {
 
 /**
  * @GMFunctionName jsUtilSetCanvasVisibility
- * @param {String} visiblity - "true" or "false"
+ * @param {String} visiblity - booleanString
  */
 function setCanvasVisibility(visiblity) {
     console.debug(getFormattedLog("[JSUtil]", "setCanvasVisibility:", visiblity));
@@ -8130,6 +8149,12 @@ function jsUtilFBPixelEvent(gameType, eventName, params) {
 }
 function jsUtilGetCanvasSize() {
    return global.jsUtilGetCanvasSize();
+}
+function jsUtilGetCanvasOffsetX() {
+   return global.jsUtilGetCanvasOffsetX();
+}
+function jsUtilGetCanvasOffsetY() {
+   return global.jsUtilGetCanvasOffsetY();
 }
 function jsUtilIsFullscreen() {
    return global.jsUtilIsFullscreen();

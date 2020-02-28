@@ -34,8 +34,8 @@
 	"system.systemEventPipeline.dispatcherLimit": 1,
 	"renderer.gui.minWidth": 480,
 	"renderer.gui.minHeight": 360,
-	"renderer.gui.maxWidth": 1920,
-	"renderer.gui.maxHeight": 1200,
+	"renderer.gui.maxWidth": 1400,
+	"renderer.gui.maxHeight": 900,
 	"renderer.view.minWidth": 480,
 	"renderer.view.minHeight": 360,
 	"renderer.view.maxWidth": 960,
@@ -67,5 +67,5 @@
 	"handheldRenderer.vertical.button.verticalOffset": 0.5,
 	"handheldRenderer.vertical.button.horizontalOffset": 0.18,
 	"handheldRenderer.vertical.button.size": 0.3,
-	"spaacerap.forceIsHandheld": true
+	"spaacerap.forceIsHandheld": false
 }

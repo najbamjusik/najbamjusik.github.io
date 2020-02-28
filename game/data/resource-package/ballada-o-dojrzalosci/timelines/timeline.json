@@ -26,7 +26,7 @@
                             1
                         ],
                         "colorGridBackground": [
-                            "#000000FF",
+                            "#00000000",
                             1
                         ],
                         "verticalScreens": [
@@ -75,7 +75,7 @@
                             0.001
                         ],
                         "colorGridBackground": [
-                            "#090f3bCC",
+                            "#00000000",
                             0.001
                         ],
                         "verticalScreens": [
@@ -87,7 +87,7 @@
                             4
                         ],
                         "isGridWheelEnabled": true,
-                        "swingGrid": false
+                        "swingGrid": true
                     }
                 }
             },
@@ -120,7 +120,7 @@
                             1
                         ],
                         "colorGridBackground": [
-                            "#000000FF",
+                            "#00000000",
                             1
                         ],
                         "verticalScreens": [
@@ -168,7 +168,7 @@
                             0.01
                         ],
                         "colorGridBackground": [
-                            "#03031ED2",
+                            "#00000000",
                             0.01
                         ]
                     }
@@ -190,38 +190,6 @@
                         "horizontalScreens": [
                             1,
                             0.01
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 2,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 2.96,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
                         ]
                     }
                 }
@@ -264,67 +232,6 @@
         ]
     },
     {
-        "time": 3.92,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 4.88,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 5.8,
-        "events": [
-            {
-                "type": "JumbotronEvent",
-                "data": {
-                    "message": "ZBIERAJ PUNKTY\nDOJRZALOSCI",
-                    "handlerName": "message",
-                    "duration": 1.6
-                }
-            }
-        ]
-    },
-    {
-        "time": 5.84,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
         "time": 6,
         "events": [
             {
@@ -332,40 +239,8 @@
                 "data": {
                     "fields": {
                         "colorGridBackground": [
-                            "#090717CC",
+                            "#910013",
                             0.001
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 6.8,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 7.76,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
                         ]
                     }
                 }
@@ -386,38 +261,6 @@
                         "horizontalScreens": [
                             1,
                             0.02
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 8.72,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 9.68,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
                         ]
                     }
                 }
@@ -452,6 +295,14 @@
                         ]
                     }
                 }
+            },
+            {
+                "type": "JumbotronEvent",
+                "data": {
+                    "message": "ZBIERAJ AMUNIACJE",
+                    "duration": 1,
+                    "handlerName": "message"
+                }
             }
         ]
     },
@@ -459,11 +310,14 @@
         "time": 10.5,
         "events": [
             {
-                "type": "JumbotronEvent",
+                "type": "GridEvent",
                 "data": {
-                    "message": "ZBIERAJ AMUNIACJE",
-                    "duration": 1.5,
-                    "handlerName": "message"
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
                 }
             },
             {
@@ -480,31 +334,15 @@
         ]
     },
     {
-        "time": 10.64,
+        "time": 11.85,
         "events": [
             {
                 "type": "GridEvent",
                 "data": {
                     "fields": {
                         "wavePulseAmount": [
-                            140,
-                            46.2
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 11.6,
-        "events": [
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "wavePulseAmount": [
-                            140,
-                            46.2
+                            100,
+                            50
                         ]
                     }
                 }
@@ -539,19 +377,27 @@
                         ]
                     }
                 }
+            },
+            {
+                "type": "JumbotronEvent",
+                "data": {
+                    "message": "ZBIERAJ NIEZDROWE",
+                    "duration": 1,
+                    "handlerName": "message"
+                }
             }
         ]
     },
     {
-        "time": 12.56,
+        "time": 13.2,
         "events": [
             {
                 "type": "GridEvent",
                 "data": {
                     "fields": {
                         "wavePulseAmount": [
-                            140,
-                            46.2
+                            100,
+                            50
                         ]
                     }
                 }
@@ -559,14 +405,17 @@
         ]
     },
     {
-        "time": 13,
+        "time": 14.55,
         "events": [
             {
-                "type": "JumbotronEvent",
+                "type": "GridEvent",
                 "data": {
-                    "message": "ZBIERAJ NIEZDROWE",
-                    "duration": 1.5,
-                    "handlerName": "message"
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
                 }
             }
         ]
@@ -599,18 +448,29 @@
                         ]
                     }
                 }
-            }
-        ]
-    },
-    {
-        "time": 15.5,
-        "events": [
+            },
             {
                 "type": "JumbotronEvent",
                 "data": {
                     "message": "OMIJAJ ZDROWE",
-                    "duration": 1.5,
+                    "duration": 1,
                     "handlerName": "message"
+                }
+            }
+        ]
+    },
+    {
+        "time": 15.9,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
                 }
             }
         ]
@@ -652,6 +512,22 @@
         ]
     },
     {
+        "time": 17.25,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 18,
         "events": [
             {
@@ -683,6 +559,22 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 18.6,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
                 }
             }
         ]
@@ -724,6 +616,22 @@
         ]
     },
     {
+        "time": 19.95,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 20.7,
         "events": [
             {
@@ -740,6 +648,22 @@
         ]
     },
     {
+        "time": 21.3,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 21.37,
         "events": [
             {
@@ -749,6 +673,38 @@
                         "topLinePosition": [
                             0.5,
                             0.001
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 22.65,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 24,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
                         ]
                     }
                 }
@@ -781,6 +737,22 @@
                         "bottomLineWidth": [
                             0.9,
                             0.001
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 25.35,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
                         ]
                     }
                 }
@@ -3422,7 +3394,7 @@
                         "isGridFrameCleaned": true,
                         "swingGrid": false,
                         "colorGridBackground": [
-                            "#79076dA0",
+                            "#FF00FF",
                             1
                         ]
                     }
@@ -5337,7 +5309,7 @@
                             0.001
                         ],
                         "colorGridBackground": [
-                            "#0E4D04FF",
+                            "#FF00FF",
                             0.01
                         ],
                         "verticalScreens": [
@@ -5385,7 +5357,7 @@
         ]
     },
     {
-        "time": 58.2,
+        "time": 58.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5416,7 +5388,7 @@
         ]
     },
     {
-        "time": 58.4,
+        "time": 58.6,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5447,7 +5419,7 @@
         ]
     },
     {
-        "time": 58.6,
+        "time": 58.9,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5478,7 +5450,7 @@
         ]
     },
     {
-        "time": 58.8,
+        "time": 59.2,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5509,7 +5481,7 @@
         ]
     },
     {
-        "time": 59,
+        "time": 59.5,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5521,99 +5493,6 @@
                         },
                         "position": [
                             0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 59.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 59.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 59.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
                             0.01
                         ],
                         "speedValues": [
@@ -5664,7 +5543,7 @@
         ]
     },
     {
-        "time": 60,
+        "time": 60.1,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5675,38 +5554,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 60.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
+                            1,
                             0.01
                         ],
                         "speedValues": [
@@ -5737,7 +5585,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.42857142857142855,
+                            1,
                             0.01
                         ],
                         "speedValues": [
@@ -5757,7 +5605,7 @@
         ]
     },
     {
-        "time": 60.6,
+        "time": 60.7,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5768,38 +5616,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.2857142857142857,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 60.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.14285714285714285,
+                            0.8571428571428571,
                             0.01
                         ],
                         "speedValues": [
@@ -5830,7 +5647,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0,
+                            0.7142857142857142,
                             0.01
                         ],
                         "speedValues": [
@@ -5850,7 +5667,7 @@
         ]
     },
     {
-        "time": 61.2,
+        "time": 61.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5861,38 +5678,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 61.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.14285714285714285,
+                            0.5714285714285714,
                             0.01
                         ],
                         "speedValues": [
@@ -5923,37 +5709,6 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.2857142857142857,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 61.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
                             0.42857142857142855,
                             0.01
                         ],
@@ -5974,7 +5729,7 @@
         ]
     },
     {
-        "time": 62,
+        "time": 61.9,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -5985,7 +5740,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.5714285714285714,
+                            0.2857142857142857,
                             0.01
                         ],
                         "speedValues": [
@@ -6016,7 +5771,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.7142857142857142,
+                            0.14285714285714285,
                             0.01
                         ],
                         "speedValues": [
@@ -6036,7 +5791,7 @@
         ]
     },
     {
-        "time": 62.4,
+        "time": 62.5,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6047,38 +5802,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 62.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
+                            0,
                             0.01
                         ],
                         "speedValues": [
@@ -6109,7 +5833,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            1,
+                            0,
                             0.01
                         ],
                         "speedValues": [
@@ -6129,7 +5853,7 @@
         ]
     },
     {
-        "time": 63,
+        "time": 63.1,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6140,38 +5864,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 63.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857142,
+                            0.14285714285714285,
                             0.01
                         ],
                         "speedValues": [
@@ -6202,7 +5895,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.5714285714285714,
+                            0.2857142857142857,
                             0.01
                         ],
                         "speedValues": [
@@ -6222,7 +5915,7 @@
         ]
     },
     {
-        "time": 63.6,
+        "time": 63.7,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6234,37 +5927,6 @@
                         },
                         "position": [
                             0.42857142857142855,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 63.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142857,
                             0.01
                         ],
                         "speedValues": [
@@ -6295,192 +5957,6 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.14285714285714285,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 64.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 64.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 64.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.14285714285714285,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 64.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142857,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 65,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.42857142857142855,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 65.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
                             0.5714285714285714,
                             0.01
                         ],
@@ -6501,7 +5977,7 @@
         ]
     },
     {
-        "time": 65.4,
+        "time": 64.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6532,7 +6008,100 @@
         ]
     },
     {
-        "time": 65.6,
+        "time": 64.6,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 64.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 65.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 65.5,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6574,99 +6143,6 @@
                             "name": "bad"
                         },
                         "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 66,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 66.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.02
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 66.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_brokulowyatak",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
                             0.7142857142857142,
                             0.01
                         ],
@@ -6687,7 +6163,7 @@
         ]
     },
     {
-        "time": 66.6,
+        "time": 66.1,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6718,7 +6194,7 @@
         ]
     },
     {
-        "time": 66.8,
+        "time": 66.4,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6749,7 +6225,7 @@
         ]
     },
     {
-        "time": 67,
+        "time": 66.7,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6780,7 +6256,7 @@
         ]
     },
     {
-        "time": 67.2,
+        "time": 67,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6811,7 +6287,7 @@
         ]
     },
     {
-        "time": 67.4,
+        "time": 67.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -6842,13 +6318,547 @@
         ]
     },
     {
+        "time": 67.6,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 67.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.14285714285714285,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 68,
+        "events": [
+            {
+                "type": "BossEvent",
+                "data": {
+                    "type": "bugz"
+                }
+            }
+        ]
+    },
+    {
+        "time": 68.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142857,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 68.5,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.42857142857142855,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 68.8,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 69.1,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857142,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 69.4,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 69.7,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 69.85,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 70,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "isGridFrameCleaned": false,
+                        "verticalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "horizontalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "colorGridBackground": [
+                            "#00000000",
+                            0.01
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 70.3,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 70.6,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857142,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 70.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 71.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.42857142857142855,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 71.5,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142857,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 71.8,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.14285714285714285,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.02
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 72,
         "events": [
             {
                 "type": "ShroomEmitterEvent",
                 "data": {
                     "amount": 2,
-                    "duration": 18,
+                    "duration": 12,
                     "interval": 0.6,
                     "templates": [
                         {
@@ -6880,34 +6890,34 @@
                         }
                     ]
                 }
-            },
-            {
-                "type": "BossEvent",
-                "data": {
-                    "type": "bugz"
-                }
             }
         ]
     },
     {
-        "time": 70,
+        "time": 72.1,
         "events": [
             {
-                "type": "GridEvent",
+                "type": "ShroomEvent",
                 "data": {
                     "fields": {
-                        "isGridFrameCleaned": false,
-                        "verticalScreens": [
-                            1,
+                        "sprite": "asset_sprite_brokulowyatak",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
                             0.01
                         ],
-                        "horizontalScreens": [
-                            1,
-                            0.01
+                        "speedValues": [
+                            0.02
                         ],
-                        "colorGridBackground": [
-                            "#06011AA2",
-                            0.01
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
                         ]
                     }
                 }
@@ -6915,33 +6925,15 @@
         ]
     },
     {
-        "time": 87.5,
+        "time": 72.55,
         "events": [
             {
                 "type": "GridEvent",
                 "data": {
                     "fields": {
-                        "isGridFrameCleaned": true,
-                        "swingGrid": true,
-                        "channels": [
-                            12,
-                            0.05
-                        ],
-                        "offsetBottom": [
-                            0.1,
-                            0.001
-                        ],
-                        "offsetTop": [
-                            0.1,
-                            0.001
-                        ],
-                        "topLineWidth": [
-                            0.6,
-                            0.001
-                        ],
-                        "bottomLineWidth": [
-                            0.9,
-                            0.001
+                        "wavePulseAmount": [
+                            100,
+                            50
                         ]
                     }
                 }
@@ -6949,13 +6941,157 @@
         ]
     },
     {
-        "time": 89,
+        "time": 73.9,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 75.25,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 76.6,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 77.95,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 79.3,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 80.65,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 82,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 83.35,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 84.7,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 86,
         "events": [
             {
                 "type": "ShroomEmitterEvent",
                 "data": {
                     "amount": 1,
-                    "duration": 9.600000000000001,
+                    "duration": 14.399999999999999,
                     "interval": 0.6,
                     "templates": [
                         {
@@ -7037,7 +7173,23 @@
         ]
     },
     {
-        "time": 89.2,
+        "time": 86.05,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 86.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -7094,7 +7246,7 @@
         ]
     },
     {
-        "time": 89.4,
+        "time": 86.6,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -7132,6 +7284,580 @@
                         },
                         "position": [
                             0.7142857142857143,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 86.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.42857142857142855,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 87.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4285714285714286,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 87.4,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 87.5,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857142,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142858,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "isGridFrameCleaned": true,
+                        "swingGrid": true,
+                        "channels": [
+                            12,
+                            0.05
+                        ],
+                        "offsetBottom": [
+                            0.1,
+                            0.001
+                        ],
+                        "offsetTop": [
+                            0.1,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.6,
+                            0.001
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.001
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 87.8,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.1428571428571429,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 88.1,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 88.4,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 88.7,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.1428571428571429,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 88.75,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 89,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857142,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142858,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 89.3,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4285714285714286,
                             0.01
                         ],
                         "speedValues": [
@@ -7208,520 +7934,7 @@
         ]
     },
     {
-        "time": 89.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.4285714285714286,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 90,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142858,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 90.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 90.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 90.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 90.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 91,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142858,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 91.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.4285714285714286,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 91.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.42857142857142855,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 91.6,
+        "time": 89.9,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -7778,7 +7991,23 @@
         ]
     },
     {
-        "time": 91.8,
+        "time": 90.1,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 90.2,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -7816,6 +8045,291 @@
                         },
                         "position": [
                             0.8571428571428572,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 90.5,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 90.8,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 91.1,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.14285714285714285,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.8571428571428572,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 91.4,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.2857142857142857,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.7142857142857143,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 91.7,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.42857142857142855,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_pizza",
+                        "type": {
+                            "name": "good"
+                        },
+                        "position": [
+                            0.5714285714285714,
                             0.01
                         ],
                         "speedValues": [
@@ -7841,12 +8355,12 @@
                 "type": "ShroomEvent",
                 "data": {
                     "fields": {
-                        "sprite": "asset_sprite_rzod",
+                        "sprite": "asset_sprite_pizza",
                         "type": {
-                            "name": "bad"
+                            "name": "good"
                         },
                         "position": [
-                            0,
+                            0.5714285714285714,
                             0.01
                         ],
                         "speedValues": [
@@ -7867,12 +8381,12 @@
                 "type": "ShroomEvent",
                 "data": {
                     "fields": {
-                        "sprite": "asset_sprite_rzod",
+                        "sprite": "asset_sprite_pizza",
                         "type": {
-                            "name": "bad"
+                            "name": "good"
                         },
                         "position": [
-                            1,
+                            0.4285714285714286,
                             0.01
                         ],
                         "speedValues": [
@@ -7892,7 +8406,7 @@
         ]
     },
     {
-        "time": 92.2,
+        "time": 92.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -7903,7 +8417,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0,
+                            0.7142857142857142,
                             0.01
                         ],
                         "speedValues": [
@@ -7929,64 +8443,7 @@
                             "name": "good"
                         },
                         "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 92.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.14285714285714285,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.8571428571428572,
+                            0.2857142857142858,
                             0.01
                         ],
                         "speedValues": [
@@ -8017,7 +8474,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.2857142857142857,
+                            0.8571428571428571,
                             0.01
                         ],
                         "speedValues": [
@@ -8043,7 +8500,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.7142857142857143,
+                            0.1428571428571429,
                             0.01
                         ],
                         "speedValues": [
@@ -8063,7 +8520,7 @@
         ]
     },
     {
-        "time": 92.8,
+        "time": 92.9,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8074,7 +8531,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.42857142857142855,
+                            1,
                             0.01
                         ],
                         "speedValues": [
@@ -8100,64 +8557,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 93,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.4285714285714286,
+                            0,
                             0.01
                         ],
                         "speedValues": [
@@ -8188,7 +8588,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.7142857142857142,
+                            1,
                             0.01
                         ],
                         "speedValues": [
@@ -8214,7 +8614,7 @@
                             "name": "good"
                         },
                         "position": [
-                            0.2857142857142858,
+                            0,
                             0.01
                         ],
                         "speedValues": [
@@ -8234,7 +8634,7 @@
         ]
     },
     {
-        "time": 93.4,
+        "time": 93.5,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8272,63 +8672,6 @@
                         },
                         "position": [
                             0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 93.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0,
                             0.01
                         ],
                         "speedValues": [
@@ -8359,120 +8702,6 @@
                             "name": "good"
                         },
                         "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 94,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
-                            0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 94.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_pizza",
-                        "type": {
-                            "name": "good"
-                        },
-                        "position": [
                             0.7142857142857142,
                             0.01
                         ],
@@ -8519,7 +8748,7 @@
         ]
     },
     {
-        "time": 94.4,
+        "time": 94.1,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8576,7 +8805,7 @@
         ]
     },
     {
-        "time": 94.6,
+        "time": 94.4,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8633,7 +8862,7 @@
         ]
     },
     {
-        "time": 94.8,
+        "time": 94.7,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8747,7 +8976,7 @@
         ]
     },
     {
-        "time": 95.2,
+        "time": 95.3,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -8782,63 +9011,6 @@
                         "sprite": "asset_sprite_pizza",
                         "type": {
                             "name": "good"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 95.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
                         },
                         "position": [
                             1,
@@ -8872,6 +9044,63 @@
                             "name": "bad"
                         },
                         "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 95.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
                             0.14285714285714285,
                             0.01
                         ],
@@ -8899,120 +9128,6 @@
                         },
                         "position": [
                             0.8571428571428572,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 95.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142857,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857143,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 96,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.42857142857142855,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
                             0.01
                         ],
                         "speedValues": [
@@ -9043,7 +9158,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.5714285714285714,
+                            0.2857142857142857,
                             0.01
                         ],
                         "speedValues": [
@@ -9069,7 +9184,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.4285714285714286,
+                            0.7142857142857143,
                             0.01
                         ],
                         "speedValues": [
@@ -9089,406 +9204,7 @@
         ]
     },
     {
-        "time": 96.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142858,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 96.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 96.8,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 97,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            1,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 97.2,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.8571428571428571,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.1428571428571429,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 97.4,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.7142857142857142,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.2857142857142858,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 97.6,
-        "events": [
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.5714285714285714,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            },
-            {
-                "type": "ShroomEvent",
-                "data": {
-                    "fields": {
-                        "sprite": "asset_sprite_rzod",
-                        "type": {
-                            "name": "bad"
-                        },
-                        "position": [
-                            0.4285714285714286,
-                            0.01
-                        ],
-                        "speedValues": [
-                            0.015
-                        ],
-                        "texts": [
-                            "",
-                            "",
-                            "",
-                            "",
-                            "",
-                            ""
-                        ]
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "time": 97.8,
+        "time": 96.5,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -9545,7 +9261,7 @@
         ]
     },
     {
-        "time": 98,
+        "time": 96.8,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -9556,7 +9272,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.2857142857142857,
+                            0.5714285714285714,
                             0.01
                         ],
                         "speedValues": [
@@ -9582,7 +9298,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.7142857142857143,
+                            0.4285714285714286,
                             0.01
                         ],
                         "speedValues": [
@@ -9602,7 +9318,7 @@
         ]
     },
     {
-        "time": 98.2,
+        "time": 97.1,
         "events": [
             {
                 "type": "ShroomEvent",
@@ -9613,7 +9329,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.14285714285714285,
+                            0.7142857142857142,
                             0.01
                         ],
                         "speedValues": [
@@ -9639,7 +9355,7 @@
                             "name": "bad"
                         },
                         "position": [
-                            0.8571428571428572,
+                            0.2857142857142858,
                             0.01
                         ],
                         "speedValues": [
@@ -9659,8 +9375,91 @@
         ]
     },
     {
-        "time": 98.4,
+        "time": 97.4,
         "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.1428571428571429,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 97.7,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
             {
                 "type": "ShroomEvent",
                 "data": {
@@ -9686,7 +9485,12 @@
                         ]
                     }
                 }
-            },
+            }
+        ]
+    },
+    {
+        "time": 98,
+        "events": [
             {
                 "type": "ShroomEvent",
                 "data": {
@@ -9697,6 +9501,203 @@
                         },
                         "position": [
                             1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 98.3,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428571,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.1428571428571429,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 98.6,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857142,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142858,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 98.9,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.4285714285714286,
                             0.01
                         ],
                         "speedValues": [
@@ -9767,6 +9768,234 @@
         ]
     },
     {
+        "time": 99.2,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.42857142857142855,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.5714285714285714,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 99.5,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.2857142857142857,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.7142857142857143,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 99.8,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.14285714285714285,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0.8571428571428572,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 100.1,
+        "events": [
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            0,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "ShroomEvent",
+                "data": {
+                    "fields": {
+                        "sprite": "asset_sprite_rzod",
+                        "type": {
+                            "name": "bad"
+                        },
+                        "position": [
+                            1,
+                            0.01
+                        ],
+                        "speedValues": [
+                            0.015
+                        ],
+                        "texts": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 111,
         "events": [
             {
@@ -9817,8 +10046,120 @@
                             0.005
                         ],
                         "colorGridBackground": [
-                            "#0E4D04FF",
+                            "#FF00FF",
                             0.02
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 112,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 113.35,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 114.7,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 116.05,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 117.4,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 118.75,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 120.1,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
                         ]
                     }
                 }
@@ -9846,6 +10187,118 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 121.45,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 122.8,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 124.15,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 125.5,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 126.85,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 128.2,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 129.55,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
                 }
             }
         ]
@@ -9926,13 +10379,141 @@
         ]
     },
     {
+        "time": 130.9,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 131,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 132.35,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 133.7,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 135.05,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 136.4,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 137.75,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 139.1,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 140,
         "events": [
             {
                 "type": "ShroomEmitterEvent",
                 "data": {
                     "amount": 4,
-                    "duration": 16,
+                    "duration": 24,
                     "interval": 0.3,
                     "templates": [
                         {
@@ -9996,7 +10577,135 @@
         ]
     },
     {
-        "time": 169.5,
+        "time": 140.45,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 141.8,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 143.15,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 144.5,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 145.85,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 147.2,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 148.55,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 149.9,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "wavePulseAmount": [
+                            100,
+                            50
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 168.5,
         "events": [
             {
                 "type": "JumbotronEvent",

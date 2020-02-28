@@ -43,6 +43,10 @@
         {
             "name": "move",
             "asset": "consoleCommandMove"
+        },
+        {
+            "name": "get_mouse_data",
+            "asset": "consoleCommandGetMouseData"
         }
     ]
 }

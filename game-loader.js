@@ -84,3 +84,20 @@ function fullscreen() {
         gameCanvas.msRequestFullscreen();
     }
 }
+
+if (document.addEventListener) {
+    document.addEventListener('fullscreenchange', onFullscreenExitHandler, false);
+    document.addEventListener('mozfullscreenchange', onFullscreenExitHandler, false);
+    document.addEventListener('MSFullscreenChange', onFullscreenExitHandler, false);
+    document.addEventListener('webkitfullscreenchange', onFullscreenExitHandler, false);
+}
+
+function onFullscreenExitHandler() {
+    if (
+        document.webkitIsFullScreen === false ||
+        document.mozFullScreen === false ||
+        document.msFullscreenElement === false
+    ) {
+        emitUserExitFullscreen()
+    }
+}

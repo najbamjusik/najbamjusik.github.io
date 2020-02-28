@@ -10,7 +10,6 @@ const content_category = "spaace-rap";
 emitUserEntered();
 
 function emitGTag(eventName, params) {
-    console.log('tracking-event', eventName, params);
     gtag('event', eventName, {
         ...params,
         clientId,
@@ -30,7 +29,8 @@ function emitFBPixel(eventName, params) {
 }
 
 function emitUserEntered() {
-    let clientVisitCount = window.sessionStorage.getItem(clientVisitCounterKey);
+    let clientVisitCount = window.localStorage.getItem(clientVisitCounterKey);
+    console.log("tracking-event", clientVisitCount, parseInt(clientVisitCount));
     if (!clientVisitCount || parseInt(clientVisitCount) == 1) {
         const eventName = "UserEnteredNew";
         emitGTag(eventName, {});
@@ -66,13 +66,18 @@ function emitUserScrolledDownOnGame() {
     emitFBPixel(eventName, {})
 }
 
-
 function emitUserClickedFullscreen() {
     const eventName = "UserClickedFullscreen";
     emitGTag(eventName, {});
     emitFBPixel(eventName, {})
-
 }
+
+function emitUserExitFullscreen() {
+    const eventName = "UserExitFullscreen";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+}
+
 function gameEvent(rawGameType, rawEventName, rawParams) {
     emitGameEvent(rawGameType, rawEventName, rawParams);
 }
