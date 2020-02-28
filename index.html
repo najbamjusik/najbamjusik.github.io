@@ -102,14 +102,13 @@
     </div>
     <div>
         <button onclick="enableFullscreen()">FULL SCREEN</button>
-        <button onclick="takeScreenshot()">ZROB SKRINA WAL DRINA</button>
+        <button onclick="takeScreenshot(-100, '123e4567-e89b-12d3-a456-426655440000')">ZROB SKRINA WAL DRINA</button>
     </div>
 </div>
 
 <script type="text/javascript" src="game-loader.js"></script>
 <script type="text/javascript" src="tracing.js"></script>
 <script type="text/javascript" src="screenshot.js"></script>
-<script type="text/javascript" src="html2canvas.min.js"></script>
 <script>window.onload = downloadGameSource;</script>
 <script src="//www.instagram.com/embed.js"></script>
 
@@ -239,6 +238,8 @@
         </div>
     </div>
 </div>
+<img style="display: none" src="resources/SCOREBOARD_1_poc-empty.png" id="memeBackground"/>
+<canvas style="display: none" id="memecanvas"></canvas>
 </body>
 
 </html>
