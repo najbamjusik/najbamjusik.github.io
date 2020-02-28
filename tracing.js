@@ -9,24 +9,6 @@ const clientId = initClientId();
 const content_category = "spaace-rap";
 emitUserEntered();
 
-/***
- *
- User Events
- - UserEntered, count
- - UserDownloadRules
- - UserScrolledDownOnInfo
- - UserClickedPlayButton
- - UserScrolledDownOnGame
- GameEvents
- - GameStarted
- - GamePlaying
- - GameFinished
- Na ekranie koncowym:
- - GameFinishRestarted
- - GameFinishScreenShoot
- - GameFinishYoutube
- */
-
 function emitGTag(eventName, params) {
     gtag('event', eventName, {
         ...params,
