@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "name": "clear",
+            "asset": "consoleCommandClear"
+        },
+        {
+            "name": "restart",
+            "asset": "consoleCommandRestart"
+        },
+        {
+            "name": "say",
+            "asset": "consoleCommandSay"
+        },
+        {
+            "name": "version",
+            "asset": "consoleCommandVersion"
+        },
+        {
+            "name": "quit",
+            "asset": "consoleCommandQuit"
+        },
+        {
+            "name": "list",
+            "asset": "consoleCommandList"
+        },
+        {
+            "name": "debug_overlay",
+            "asset": "consoleCommandDebugOverlay"
+        },
+        {
+            "name": "get_working_directory",
+            "asset": "consoleCommandGetWorkingDirectory"
+        },
+        {
+            "name": "open_window",
+            "asset": "consoleCommandOpenWindow"
+        },
+        {
+            "name": "fullscreen",
+            "asset": "consoleCommandFullscreen"
+        },
+        {
+            "name": "move",
+            "asset": "consoleCommandMove"
+        },
+        {
+            "name": "get_mouse_data",
+            "asset": "consoleCommandGetMouseData"
+        }
+    ]
+}

@@ -4,71 +4,28 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="pragma" content="no-cache"/>
-    <meta name="apple-mobile-web-app-capable" content="no"/>
-    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta charset="utf-8"/>
+    <meta property="title" content="ZAGRAJ W TELEDYSK - NAJBA MJUSIK"/>
+    <meta property="description"
+          content="Zagraj w teledysk! Zamiast biernie oglądać pokieruj losami teledysku! Zbieraj punkty dojrzałości i strzelaj butelkami w brokuły"/>
     <meta property="og:url" content="http://www.najbamjusik.pl"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="ZAGRAJ W TELEDYSK - NAJBA MJUSIK"/>
-    <meta property="og:description" content="Zamiast biernie oglądać pokieruj losami teledysku!"/>
-    <meta property="og:image" content="http://raw.githubusercontent.com/najbamjusik/najbamjusik.github.io/master/asset_preview.png"/>
+    <meta property="og:description"
+          content="Zamiast biernie oglądać pokieruj losami teledysku! Zbieraj punkty dojrzałości i strzelaj butelkami w brokuły"/>
+    <meta property="og:image"
+          content="http://raw.githubusercontent.com/najbamjusik/najbamjusik.github.io/master/resources/preview.jpg"/>
+    <meta property="og:audio" content="https://www.youtube.com/watch?v=4nKiYG2s5P0"/>
+    <meta property="og:video" content="https://www.youtube.com/watch?v=4nKiYG2s5P0"/>
     <meta property="fb:app_id" content=""/>
-    <style>
-        body {
-            background: #000000;
-            color: #cccccc;
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
-            text-align: center;
-        }
 
-        canvas {
-            image-rendering: optimizeSpeed;
-            -webkit-interpolation-mode: nearest-neighbor;
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-        }
+    <title>Najba Mjusik - Dominik Krulig Bugz Ballada o Dojrzałości</title>
+    <link type="text/css" href="index.css" rel="stylesheet"/>
+    <link type="text/css" href="font.css" rel="stylesheet">
+    <link type="text/css" href="nes.css" rel="stylesheet"/>
 
-        :-webkit-full-screen #canvas {
-            width: 100%;
-            height: 100%;
-        }
-
-        div.gm4html5_div_class {
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-        }
-
-        div.gm4html5_login {
-            border: solid 2px #000000;
-            background-color: #404040;
-            color: #00ff00;
-            border-radius: 15px;
-            box-shadow: #101010 20px 20px 40px;
-        }
-
-        div.gm4html5_cancel_button {
-            float: right;
-        }
-
-        div.gm4html5_login_button {
-            float: left;
-        }
-
-        div.gm4html5_login_header {
-            text-align: center;
-        }
-
-        :-webkit-full-screen {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151016146-1"></script>
     <script>
@@ -111,921 +68,191 @@
              src="https://www.facebook.com/tr?id=560194381222510&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
-    <title>Najba Mjusik Gameplay</title>
-    <!-- NES.CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet"/>
-    <!-- End NES.CSS -->
-    <!-- Custom CSS -->
-    <style>
-        html {
-            min-width: 1080px;
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            background-image: url("asset_background_space_pixelart.png");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: repeat;
-            background-size: cover;
-        }
-
-        .page-title {
-            font-size: 36px;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        .page-title-container {
-            padding-top: 70px;
-            padding-bottom: 50px;
-        }
-
-        .game-canvas {
-            display: inline-block;
-            margin: 0 auto;
-            padding: 50px;
-            background-color: #000000;
-            -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
-            -moz-box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
-            box-shadow: 0px 0px 50px 10px rgba(255, 0, 255, 0.33);
-        }
-
-        .game-canvas-container {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .game-logo {
-            width: 100%;
-            text-align: center;
-            min-height: 66px;
-            background-image: url("asset_spaace_loader_logo.png");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .game-hint {
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: 14px;
-            text-align: center;
-            color: #d6d6d6;
-        }
-
-        .header-title {
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: 22px;
-            text-align: center;
-            color: #000000;
-        }
-
-        .header-title-container {
-            width: 100%;
-            text-align: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .header-content {
-            width: 520px;
-            display: inline-block;
-            margin: 0 auto;
-            background-color: #fff478;
-            -webkit-box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
-            -moz-box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
-            box-shadow: inset 0px 0px 50px 10px rgba(255, 226, 36, 1);
-        }
-
-        .wrapper-post-content {
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
-
-        .post-content {
-            width: 520px;
-            display: inline-block;
-            margin: 0 auto;
-            -webkit-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
-            -moz-box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
-            box-shadow: 0px 0px 50px 0px rgba(237, 38, 255, 0.33);
-        }
-    </style>
-    <!-- End Custom CSS -->
 </head>
 
 <body>
-<div class="page-title-container">
-    <p class="page-title">💿💿💿 najbamjusik.pl 💿💿💿</p>
+
+
+<div class="section-page-title-container">
+    <h1 class="page-title"><span class="desktop-br">💿💿💿 </span>najbamjusik.pl<span class="desktop-br"> 💿💿💿</span>
+    </h1>
+    <h1 class="page-subtitle">krulig - ballada o dojrzalosci</h1>
 </div>
-<div class="game-canvas-container">
-    <div class="game-canvas gm4html5_div_class" id="gm4html5_div_id">
-        <div class="game-logo"></div>
-        <canvas id="canvas" width="960" height="540">
-            <p>Your browser doesn't support HTML5 canvas.</p>
-        </canvas>
-        <p class="game-hint">zbieraj itemki <span style="color: #53ff0f">dobre</span>, omijaj itemki <span
-                style="color: #ff0000">złe</span> bo masz graficzny wpierdziel</p>
+
+
+<div class="section-info-container box-shadow" id="section-info-container">
+    <div class="info-header">
+        <h1 class="info-header">Wygraj emotional feelings ep IV!</h1>
+        <img src="resources/mockup_1_kwadrat-black.jpg" alt="Emotional Feelings EP IV"/>
     </div>
+    <ul class="info-content">
+        <li class="info-point">Grasz 3 minuty w <b>GRE</b></li>
+        <li class="info-point">Zapisujesz screena z wynikiem</li>
+        <li class="info-point">Followujesz <a href="http://instagram.com/najbamjusik"
+                                              target="_blank">@NajbaMjusik</a> na Instagramie
+        </li>
+        <li class="info-point">Oznaczasz <a href="http://instagram.com/najbamjusik" target="_blank">@NajbaMjsuik</a>
+            i wrzucasz obrazek z
+            wynikiem na swoje <b>INSTA STORY</b></li>
+        <li class="info-point">Wygrywa najwieksza i najmniejsza liczba punktów dojrzałości</li>
+    </ul>
+    <div class="info-rules">Biorąc udział w konkursie akceptujesz jego <a href="regulamin.pdf"
+                                                                          onclick="emitUserDownloadedRules()"
+                                                                          target="_blank">regulamin</a></div>
+    <div class="info-rules">KONKURS JESZCZE SIE NIE ROZPOCZAL MISIAKI</div>
+    <button class="info-container-play-btn pending" onclick="runGame()" id="play-button" disabled="true">GRAMY! ▶▶▶</button>
 </div>
-<div class="header-title-container">
-    <div class="header-content">
-        <p class="header-title">⬇️⬇️⬇️</p>
-        <p class="header-title">Patrz jakie mamy instagramy i daj tam follow</p>
-        <p class="header-title">⬇️⬇️⬇️</p>
+
+
+<div class="section-game-container invisible" id="section-game-container">
+    <div class="game-container box-shadow">
+        <div class="game-canvas-container game-canvas-container-media" id="game-canvas-container"></div>
     </div>
-</div>
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Ballada o dojrzałości!!! Moja nowa śmieszna piosenka wjechała na yutubka.
-                    Masz link
-                    w bio, bo tutaj się chyba nie da nacisnąć ;)) Poprosze o wsparcie komentarze i
-                    udostępnienia, dzięki
-                    #balladyokurdezyciu #hiphop #yolo #rap</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/kruligh/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> Dominik Bugz</a> (@kruligh)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-10-28T14:26:28+00:00">Paź 28, 2019 o 7:26 PDT
-                    </time>
-                </p>
-            </div>
-        </blockquote>
-    </div>
-</div>
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B4AbyZmJ4Po/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B4AbyZmJ4Po/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B4AbyZmJ4Po/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Tak się dzieje za każdym razem jak sie okazuje że atak pająka na mysz ma
-                    więcej
-                    wyświetleń niż moja piosenka #fail #party #yolo</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/kruligh/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> Dominik Bugz</a> (@kruligh)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-10-24T15:57:08+00:00">Paź 24, 2019 o 8:57 PDT
-                    </time>
-                </p>
-            </div>
-        </blockquote>
+    <div>
+        <button onclick="enableFullscreen()">FULL SCREEN</button>
     </div>
 </div>
 
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <iframe width="520" height="315" src="https://www.youtube.com/embed/S-PWP83tfMU" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-    </div>
-</div>
+<script type="text/javascript" src="game-loader.js"></script>
+<script type="text/javascript" src="tracing.js"></script>
+<script type="text/javascript" src="screenshot.js"></script>
+<script>window.onload = downloadSources;</script>
 
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B2EldD-I6aM/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B2EldD-I6aM/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B2EldD-I6aM/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Nowy klipik @najbamjusik na kanale @kstyk_label produkcja @catchupxxl
-                    directed by
-                    @cydriwino Link w bio misie 🔥🔥🔥🔥🔥 Popchaj to dalej</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/kruligh/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> Dominik Bugz</a> (@kruligh)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-09-06T13:35:46+00:00">Wrz 6, 2019 o 6:35 PDT
-                    </time>
-                </p>
-            </div>
-        </blockquote>
-    </div>
-</div>
-
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B4SrkOjHLJ4/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B4SrkOjHLJ4/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B4SrkOjHLJ4/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Tak powstawał klip a jednocześnie gra w którą będziecie mogli wkrótce
-                    zagrać.
-                    Ballada o dojrzałości - Dominik Krulig Bugz, produkcja Desp #hiphop #rap #rapper #music
-                    #programming
-                    #gamedev</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/najbamjusik/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> NAJBA MJUSIK</a> (@najbamjusik)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-10-31T18:01:41+00:00">Paź 31, 2019 o 11:01 PDT
-                    </time>
-                </p>
-            </div>
-        </blockquote>
-    </div>
-</div>
-
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <iframe width="520" height="315" src="https://www.youtube.com/embed/4nKiYG2s5P0" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B4rsb-LHdaZ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B4rsb-LHdaZ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B4rsb-LHdaZ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Najba na misji, potem najba to misja #rap #najbamjusik #najbafamilia #hiphop
-                    #koncert #koncerty #taco #quebo #schafter #polskirap #trasa #ontour #raper #2k19 #wwa #cd
-                    #concert
-                    #2k20</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/najbamjusik/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> NAJBA MJUSIK</a> (@najbamjusik)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-11-10T11:09:57+00:00">Lis 10, 2019 o 3:09 PST
-                    </time>
-                </p>
-            </div>
-        </blockquote>
-    </div>
-</div>
-
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <blockquote class="instagram-media" data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/p/B2FLMrLn4HS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="12"
-                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-            <div style="padding:16px;"><a
-                    href="https://www.instagram.com/p/B2FLMrLn4HS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                <div style=" display: flex; flex-direction: row; align-items: center;">
-                    <div
-                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                    </div>
-                </div>
-                <div style="padding: 19% 0;"></div>
-                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                         xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                <g>
-                                    <path
-                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div style="padding-top: 8px;">
-                    <div
-                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Wyświetl ten post na Instagramie.
-                    </div>
-                </div>
-                <div style="padding: 12.5% 0;"></div>
-                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                    <div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                        </div>
-                        <div
-                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                        </div>
-                    </div>
-                    <div style="margin-left: 8px;">
-                        <div
-                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                        </div>
-                    </div>
-                    <div style="margin-left: auto;">
-                        <div
-                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                        </div>
-                        <div
-                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                        </div>
-                        <div
-                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                        </div>
-                    </div>
-                </div>
-            </a>
-                <p style=" margin:8px 0 0 0; padding:0 4px;"><a
-                        href="https://www.instagram.com/p/B2FLMrLn4HS/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
-                        target="_blank">Kowalczyk - Zły, produkcja @catchupxxl klip @cydriwino host @kstyk_label
-                    Dzięki za
-                    ciepłe przyjęcie mordeczki</a></p>
-                <p
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    Post udostępniony przez <a
-                        href="https://www.instagram.com/najbamjusik/?utm_source=ig_embed&amp;utm_campaign=loading"
-                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank"> NAJBA MJUSIK</a> (@najbamjusik)
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                          datetime="2019-09-06T19:05:40+00:00">Wrz 6, 2019 o 12:05 PDT
-                    </time>
-                </p>
-            </div>
-        </blockquote>
+<div class="feed-section-container">
+    <div class="feed-header-container">
+        <div class="feed-header-content">
+            <p class="feed-header-title-emoji">⬇️⬇️⬇️</p>
+            <p class="feed-header-title-text">NAJBA FEED</p>
+            <p class="feed-header-title-emoji">⬇️⬇️⬇️</p>
+        </div>
     </div>
     <div class="wrapper-post-content">
-        <div class="post-content">
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/S-PWP83tfMU" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+        <div class="post-content box-shadow">
+            <iframe class="post-content-yt"
+                    src="https://www.youtube.com/embed/videoseries?list=PLUWx5xffh4KAMbGydRAaLlyuMaA5c6r0f"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="wrapper-post-content">
+        <div class="post-content post-content-instagram box-shadow">
+            <blockquote class="instagram-media" data-instgrm-captioned
+                        data-instgrm-permalink="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="12"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"><a
+                        href="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                        target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                        <div
+                                style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                            <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                            </div>
+                            <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                        <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                             xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                    <g>
+                                        <path
+                                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div style="padding-top: 8px;">
+                        <div
+                                style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                            Wyświetl ten post na Instagramie.
+                        </div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div>
+                            <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                            </div>
+                            <div
+                                    style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                            </div>
+                            <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                            </div>
+                        </div>
+                        <div style="margin-left: 8px;">
+                            <div
+                                    style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                            </div>
+                            <div
+                                    style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                            </div>
+                        </div>
+                        <div style="margin-left: auto;">
+                            <div
+                                    style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                            </div>
+                            <div
+                                    style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                            </div>
+                            <div
+                                    style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                    <p style=" margin:8px 0 0 0; padding:0 4px;"><a
+                            href="https://www.instagram.com/p/B4Kkl1XHriS/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
+                            target="_blank">Ballada o dojrzałości!!! Moja nowa śmieszna piosenka wjechała na yutubka.
+                        Masz link
+                        w bio, bo tutaj się chyba nie da nacisnąć ;)) Poprosze o wsparcie komentarze i
+                        udostępnienia, dzięki
+                        #balladyokurdezyciu #hiphop #yolo #rap</a></p>
+                    <p
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                        Post udostępniony przez <a
+                            href="https://www.instagram.com/kruligh/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
+                            target="_blank"> Dominik Bugz</a> (@kruligh)
+                        <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
+                              datetime="2019-10-28T14:26:28+00:00">Paź 28, 2019 o 7:26 PDT
+                        </time>
+                    </p>
+                </div>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="feed-header-container">
+        <div class="feed-header-content">
+            <p class="feed-header-title-emoji">⬆️⬆️⬆️</p>
+            <h3 class="feed-header-title-text">DZIEKI FOLLOW GRASZ ZA DARMO</h3>
+            <p class="feed-header-title-emoji">⬆️⬆️⬆️</p>
         </div>
     </div>
 </div>
-<!--
-<div class="wrapper-post-content">
-    <div class="post-content">
-        <div class="game-canvas gm4html5_div_class" id="gm4html5_div_id">
-            <div class="game-logo"></div>
-            <iframe src="hamstermania.html" width="550" height="970"></iframe>
-        </div>
-    </div>
+
+<div class="section-footer-container" id="section-footer-container">
+    <h3 class="section-footer-item">Chcesz podobna gre do swojego utworu?</h3>
+    <div class="section-footer-item">pisz na: najbamjusik@gmail.com</div>
+    <h3 class="section-footer-item">Dominik Krulig Bugz</h3>
 </div>
--->
-<div class="header-title-container">
-    <div class="header-content">
-        <p class="header-title">⬇️⬇️⬇️</p>
-        <p class="header-title">Dzięki follow możesz grać za darmo</p>
-        <p class="header-title">⬇️⬇️⬇️</p>
-    </div>
-</div>
-<script>
-    const DOJRZALOSC = "KRULIG_DOJRZALOSC";
-    const DZBAN_POLICJA = "DZBAN_POLICJA";
 
-    const sessionId = createUUID();
-    const clientId = initClientId();
-
-    var gameEvent = function (rawGameType, rawEventName, rawParams) {
-        const gameType = getGameType(rawGameType);
-        if (!gameType) {
-            return;
-        }
-        const params = JSON.parse(rawParams.split("'").join('"'));
-        const score = params.score;
-        const time = Math.round(params.time);
-        const gameCounter = params.gameCounter;
-
-        // console.log({gameType, gameCounter, time, score, sessionId});
-
-        putGAGameEvent("GamePlaying");
-
-        if (time === 0) {
-            if (gameCounter > 1) {
-                putPixelGameEvent("GameRestarted");
-            } else {
-                putPixelGameEvent("GameStarted");
-            }
-            return;
-        }
-
-        if (isEndOfGame(gameType, time)) {
-            putPixelGameEvent("GameFinished");
-            return;
-        }
-
-        if (time === 60) {
-            putPixelGameEvent("GamePlaying");
-        }
-
-        if (time === 120) {
-            putPixelGameEvent("GamePlaying");
-        }
-
-        function putPixelGameEvent(eventName) {
-            fbq('trackCustom', eventName, {
-                clientId,
-                sessionId,
-                content_name: gameType,
-                content_category: "game",
-                gameCounter,
-                time,
-                score,
-            });
-        }
-
-        function putGAGameEvent(eventName) {
-            gtag('event', eventName, {
-                clientId,
-                sessionId,
-                content_name: gameType,
-                content_category: "game",
-                gameCounter,
-                time,
-                score,
-            });
-        }
-    };
-
-    function getGameType(gameTypeRaw) {
-        if (gameTypeRaw.endsWith("policje-nalezy-pierdolic")) {
-            return DZBAN_POLICJA;
-        } else if (gameTypeRaw.endsWith("ballada-o-dojrzalosci")) {
-            return DOJRZALOSC;
-        } else {
-            console.error("unknown gameTypeRaw", gameTypeRaw);
-            return undefined;
-        }
-    }
-
-    function isEndOfGame(gameType, time) {
-        switch (gameType) {
-            case DOJRZALOSC:
-                return time === 169;
-            case DZBAN_POLICJA:
-                return time === 122;
-            default:
-                console.error("No end time defined for " + gameType);
-                return false;
-        }
-    }
-
-    function initClientId() {
-        const clientIdKey = "3770d3a4-ffe0-462b-8b24-a2b1748d4e08";
-
-        let clientId = window.sessionStorage.getItem(clientIdKey);
-        if (!clientId) {
-            clientId = createUUID();
-            window.localStorage.setItem(clientIdKey, clientId);
-            gtag('event', 'NewUserEntered', {
-                clientId,
-                sessionId,
-                content_category: "game",
-            });
-            fbq('trackCustom', 'NewUserEntered', {
-                clientId,
-                sessionId,
-                content_category: "game",
-            });
-        } else {
-            gtag('event', 'ReturningUserEntered', {
-                clientId,
-                sessionId,
-                content_category: "game",
-            });
-            fbq('trackCustom', 'NewUserEntered', {
-                clientId,
-                sessionId,
-                content_category: "game",
-            });
-        }
-        return clientId;
-    }
-
-    function createUUID() {
-        // http://www.ietf.org/rfc/rfc4122.txt
-        var s = [];
-        var hexDigits = "0123456789abcdef";
-        for (var i = 0; i < 36; i++) {
-            s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
-        }
-        s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
-        s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
-        s[8] = s[13] = s[18] = s[23] = "-";
-
-        var uuid = s.join("");
-        return uuid;
-    }
-
-</script>
-<!-- End Event handler ------------------------- -->
-
-<script src="//www.instagram.com/embed.js"></script>
-<script type="text/javascript" src="game/ballada-o-dojrzalosci.js?KNIAC=2056727648"></script>
-<script>window.onload = GameMaker_Init;</script>
+<img style="display: none" src="resources/SCOREBOARD_1_poc-empty.png" id="memeBackground"/>
+<canvas style="display: none" id="memecanvas"></canvas>
 </body>
 
 </html>
