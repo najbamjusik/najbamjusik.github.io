@@ -3,6 +3,28 @@
         "time": 0,
         "events": [
             {
+                "type": "LyricsEvent",
+                "data": {
+                    "lyrics": [
+                        "Zycie to koszmar uzaleznien ;",
+                        "Burgery, pizza, browary ;",
+                        "Kocham to ;",
+                        "",
+                        "Zycie to podroz po osi czasu ;",
+                        "Brokuly, rzodkiewki, kapary ;",
+                        "Jebana zielenina ;",
+                        "",
+                        "Zycie to ciagle wybory ;",
+                        "A ja lece bezwladnie w otchlan ;",
+                        "I nie moge sie zatrzymac ;",
+                        "",
+                        "Krulig - ballada o dojrzalosci ;"
+                    ],
+                    "lifespan": 10,
+                    "duration": 1
+                }
+            },
+            {
                 "type": "GridEvent",
                 "data": {
                     "fields": {

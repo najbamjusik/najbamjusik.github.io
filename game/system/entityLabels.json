@@ -165,5 +165,8 @@
 	"timelineEntry.events": "events",
 	"timelineEntry.time": "time",
 	"timelineEvent.data": "data",
-	"timelineEvent.type": "type"
+	"timelineEvent.type": "type",
+	"lyricsEvent.lyrics": "lyrics",
+	"lyricsEvent.lifespan": "lifespan",
+	"lyricsEvent.duration": "duration"
 }
