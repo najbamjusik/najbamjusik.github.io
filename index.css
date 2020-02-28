@@ -250,3 +250,14 @@ canvas {
 .invisible {
     display: none;
 }
+
+.section-footer-container {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 50px;
+    width: 75%;
+    max-width: 1024px;
+    min-width: 375px;
+    margin: 0 auto;
+}

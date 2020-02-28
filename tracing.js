@@ -172,7 +172,7 @@ function createUUID() {
 let alreadyScrolledOnInfo = false;
 let alreadyScrolledOnGame = false;
 window.onscroll = () => {
-    const footer = document.getElementById("footer-section-container");
+    const footer = document.getElementById("section-footer-container");
     const footerPosition = footer.getBoundingClientRect().top;
 
     if (document.body.scrollTop > footerPosition || document.documentElement.scrollTop > footerPosition) {
