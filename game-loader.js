@@ -19,13 +19,21 @@ function getSectionInfoContainer() {
     return document.getElementById("section-info-container");
 }
 
+function getPlayButton() {
+    return document.getElementById("play-button");
+}
+
 function getCanvas() {
     return document.getElementById("canvas");
 }
 
-function downloadGameSource() {
+function downloadSources() {
     appendJSToDOM("game/spaace-rap.js", document.body, () => {
         console.log("GAME LOADED");
+        getPlayButton().classList.remove(INVISIBLE_CSS_CLASS);
+        appendJSToDOM("//www.instagram.com/embed.js", document.body, () => {
+            console.log("Asd");
+        })
     });
 }
 

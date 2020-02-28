@@ -130,6 +130,7 @@ canvas {
     background-color: var(--button-collor);
     font-size: max(12px, min(26px, 2.0vw));
     color: var(--primary-color);
+    cursor: inherit;
 }
 
 .section-game-container {
