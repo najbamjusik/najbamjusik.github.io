@@ -1,4 +1,5 @@
 var INVISIBLE_CSS_CLASS = "invisible";
+var LOADING_CSS_CLASS = "pending";
 
 function appendJSToDOM(url, location, onLoadCallback) {
     const scriptTag = document.createElement("script");
@@ -30,9 +31,9 @@ function getCanvas() {
 function downloadSources() {
     appendJSToDOM("game/spaace-rap.js", document.body, () => {
         console.log("GAME LOADED");
-        getPlayButton().classList.remove(INVISIBLE_CSS_CLASS);
+        getPlayButton().classList.remove(LOADING_CSS_CLASS);
+        getPlayButton().disabled = false;
         appendJSToDOM("//www.instagram.com/embed.js", document.body, () => {
-            console.log("Asd");
         })
     });
 }
