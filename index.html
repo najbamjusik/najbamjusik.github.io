@@ -90,7 +90,7 @@
             wynikiem na swoje <b>INSTA STORY</b></li>
         <li class="info-point">Wygrywa najwieksza i najmniejsza liczba punktów dojrzałości</li>
     </ul>
-    <div class="info-rules">Biorąc udział w konkursie akceptujesz jego <a href="regulamin.pdf">regulamin</a></div>
+    <div class="info-rules">Biorąc udział w konkursie akceptujesz jego <a href="regulamin.pdf" onclick="emitUserDownloadedRules()" target="_blank">regulamin</a></div>
     <div class="info-rules">KONKURS JESZCZE SIE NIE ROZPOCZAL MISIAKI</div>
     <button class="info-container-play-btn" onclick="runGame()">GRAMY! ▶▶▶</button>
 </div>
@@ -102,7 +102,6 @@
     </div>
     <div>
         <button onclick="enableFullscreen()">FULL SCREEN</button>
-        <button onclick="takeScreenshot(-100, '123e4567-e89b-12d3-a456-426655440000')">ZROB SKRINA WAL DRINA</button>
     </div>
 </div>
 
@@ -239,7 +238,7 @@
     </div>
 </div>
 
-<div class="footer-section-container">
+<div class="footer-section-container" id="footer-section-container">
     <div class="footer-section-item">Chcesz podobna gre do swojego utworu?</div>
     <div class="footer-section-item">Kontakt: najbamjusik@gmail.com</div>
 </div>

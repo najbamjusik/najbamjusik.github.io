@@ -1,3 +1,5 @@
+var INVISIBLE_CSS_CLASS = "invisible";
+
 function appendJSToDOM(url, location, onLoadCallback) {
     const scriptTag = document.createElement("script");
     scriptTag.src = url;
@@ -38,19 +40,20 @@ function runGame() {
         gameCanvasContainer.appendChild(gameCanvas);
     }
 
+    emitUserClickedPlayButton();
     GameMaker_Init();
     showGameContainer();
 }
 
 function showGameContainer() {
     const gameContainer = getSectionGameContainer();
-    const INVISIBLE_CSS_CLASS = "invisible";
     gameContainer.classList.remove(INVISIBLE_CSS_CLASS);
     const infoContainer = getSectionInfoContainer();
     infoContainer.classList.add(INVISIBLE_CSS_CLASS);
 }
 
 function enableFullscreen() {
+    emitUserClickedFullscreen();
     const gameCanvas = getCanvas();
     if (gameCanvas.requestFullscreen) {
         gameCanvas.requestFullscreen();

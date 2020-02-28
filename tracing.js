@@ -10,6 +10,7 @@ const content_category = "spaace-rap";
 emitUserEntered();
 
 function emitGTag(eventName, params) {
+    console.log('tracking-event', eventName, params);
     gtag('event', eventName, {
         ...params,
         clientId,
@@ -19,6 +20,7 @@ function emitGTag(eventName, params) {
 }
 
 function emitFBPixel(eventName, params) {
+    console.log('tracking-event', eventName, params);
     fbq('trackCustom', eventName, {
         ...params,
         clientId,
@@ -29,7 +31,7 @@ function emitFBPixel(eventName, params) {
 
 function emitUserEntered() {
     let clientVisitCount = window.sessionStorage.getItem(clientVisitCounterKey);
-    if(!clientVisitCount || parseInt(clientVisitCount) == 1){
+    if (!clientVisitCount || parseInt(clientVisitCount) == 1) {
         const eventName = "UserEnteredNew";
         emitGTag(eventName, {});
         emitFBPixel(eventName, {})
@@ -52,18 +54,27 @@ function emitUserScrolledDownOnInfo() {
     emitFBPixel(eventName, {})
 }
 
-function emitUserClieckedPlayButton() {
+function emitUserClickedPlayButton() {
     const eventName = "UserClickedPlay";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+}
+
+function emitUserScrolledDownOnGame() {
+    const eventName = "UserScrolledDownOnGame";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+}
+
+
+function emitUserClickedFullscreen() {
+    const eventName = "UserClickedFullscreen";
     emitGTag(eventName, {});
     emitFBPixel(eventName, {})
 
 }
-
-function emitUserSCrolledDownOnGame() {
-    const eventName = "UserScrolledDownOnGame";
-    emitGTag(eventName, {});
-    emitFBPixel(eventName, {})
-
+function gameEvent(rawGameType, rawEventName, rawParams) {
+    emitGameEvent(rawGameType, rawEventName, rawParams);
 }
 
 function emitGameEvent(rawGameType, rawEventName, rawParams) {
@@ -151,5 +162,28 @@ function createUUID() {
 
     var uuid = s.join("");
     return uuid;
+}
+
+let alreadyScrolledOnInfo = false;
+let alreadyScrolledOnGame = false;
+window.onscroll = () => {
+    const footer = document.getElementById("footer-section-container");
+    const footerPosition = footer.getBoundingClientRect().top;
+
+    if (document.body.scrollTop > footerPosition || document.documentElement.scrollTop > footerPosition) {
+        if (areWeOnInfo()) {
+            if (!alreadyScrolledOnInfo) {
+                emitUserScrolledDownOnInfo();
+                alreadyScrolledOnInfo = true;
+            }
+        } else if (!alreadyScrolledOnGame) {
+            emitUserScrolledDownOnGame();
+            alreadyScrolledOnGame = true;
+        }
+    }
+};
+
+function areWeOnInfo() {
+    return !getSectionInfoContainer().classList.contains(INVISIBLE_CSS_CLASS);
 }
 
