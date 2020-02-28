@@ -1,86 +1,136 @@
 const DOJRZALOSC = "KRULIG_DOJRZALOSC";
 const DZBAN_POLICJA = "DZBAN_POLICJA";
 
+const clientIdKey = "3770d3a4-ffe0-462b-8b24-a2b1748d4e08";
+const clientVisitCounterKey = "3770d3a4-ffe0-462b-8b24-a2b1748d1111";
+
 const sessionId = createUUID();
 const clientId = initClientId();
+const content_category = "spaace-rap";
+emitUserEntered();
 
 /***
  *
- * generateUuid, store
- * UerEntered, count
- * rules
- * scrolledDownOnInfo
- * playButtonClicked
- * GameEvents
- *      GameStarted, count
- *      GamePlaying
- *      GameFinished
- *      GameScreenShoot
- * scrolledDownOnGame
+ User Events
+ - UserEntered, count
+ - UserDownloadRules
+ - UserScrolledDownOnInfo
+ - UserClickedPlayButton
+ - UserScrolledDownOnGame
+ GameEvents
+ - GameStarted
+ - GamePlaying
+ - GameFinished
+ Na ekranie koncowym:
+ - GameFinishRestarted
+ - GameFinishScreenShoot
+ - GameFinishYoutube
  */
 
+function emitGTag(eventName, params) {
+    gtag('event', eventName, {
+        ...params,
+        clientId,
+        sessionId,
+        content_category,
+    });
+}
 
+function emitFBPixel(eventName, params) {
+    fbq('trackCustom', eventName, {
+        ...params,
+        clientId,
+        sessionId,
+        content_category,
+    });
+}
 
-var gameEvent = function (rawGameType, rawEventName, rawParams) {
+function emitUserEntered() {
+    let clientVisitCount = window.sessionStorage.getItem(clientVisitCounterKey);
+    if(!clientVisitCount || parseInt(clientVisitCount) == 1){
+        const eventName = "UserEnteredNew";
+        emitGTag(eventName, {});
+        emitFBPixel(eventName, {})
+    } else {
+        const eventName = "UserEnteredReturning";
+        emitGTag(eventName, {clientVisitCount});
+        emitFBPixel(eventName, {clientVisitCount})
+    }
+}
+
+function emitUserDownloadedRules() {
+    const eventName = "UserDownloadedRules";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+}
+
+function emitUserScrolledDownOnInfo() {
+    const eventName = "UserScrolledDownOnInfo";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+}
+
+function emitUserClieckedPlayButton() {
+    const eventName = "UserClickedPlay";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+
+}
+
+function emitUserSCrolledDownOnGame() {
+    const eventName = "UserScrolledDownOnGame";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {})
+
+}
+
+function emitGameEvent(rawGameType, rawEventName, rawParams) {
     const gameType = getGameType(rawGameType);
     if (!gameType) {
         return;
     }
+
     const params = JSON.parse(rawParams.split("'").join('"'));
     const score = params.score;
     const time = Math.round(params.time);
+    const ammo = params.ammo;
     const gameCounter = params.gameCounter;
+    const gameParams = {
+        time, score, ammo, gameCounter, content_name: gameType
+    };
 
-    // console.log({gameType, gameCounter, time, score, sessionId});
-
-    putGAGameEvent("GamePlaying");
-
-    if (time === 0) {
-        if (gameCounter > 1) {
-            putPixelGameEvent("GameRestarted");
-        } else {
-            putPixelGameEvent("GameStarted");
-        }
-        return;
+    switch (rawEventName) {
+        case "GameStarted":
+            emitFBPixel("GameStarted", gameParams);
+            emitGTag("GameStarted", gameParams);
+            return;
+        case "GamePlaying":
+            emitFBPixel("GamePlaying", gameParams);
+            emitGTag("GamePlaying", gameParams);
+            return;
+        case "GameFinished":
+            emitFBPixel("GameFinished", gameParams);
+            emitGTag("GameFinished", gameParams);
+            return;
+        case "GameFinishedRestarted":
+            emitFBPixel("GameFinishedRestarted", gameParams);
+            emitGTag("GameFinishedRestarted", gameParams);
+            return;
+        case "GameFinishedScreenshot":
+            console.log("asd");
+            emitFBPixel("GameFinishedScreenshot", gameParams);
+            emitGTag("GameFinishedScreenshot", gameParams);
+            takeScreenshot(score, clientId);
+            return;
+        case "GameFinishedYoutube":
+            emitFBPixel("GameFinishedYoutube", gameParams);
+            emitGTag("GameFinishedYoutube", gameParams);
+            window.open('https://www.youtube.com/watch?v=4nKiYG2s5P0&list=PLUWx5xffh4KAMbGydRAaLlyuMaA5c6r0f&index=2&t=0s', '_blank');
+            return;
+        default:
+            console.error("Unknown event name " + rawEventName);
     }
-
-    if (isEndOfGame(gameType, time)) {
-        putPixelGameEvent("GameFinished");
-        return;
-    }
-
-    if (time === 60) {
-        putPixelGameEvent("GamePlaying");
-    }
-
-    if (time === 120) {
-        putPixelGameEvent("GamePlaying");
-    }
-
-    function putPixelGameEvent(eventName) {
-        fbq('trackCustom', eventName, {
-            clientId,
-            sessionId,
-            content_name: gameType,
-            content_category: "game",
-            gameCounter,
-            time,
-            score,
-        });
-    }
-
-    function putGAGameEvent(eventName) {
-        gtag('event', eventName, {
-            clientId,
-            sessionId,
-            content_name: gameType,
-            content_category: "game",
-            gameCounter,
-            time,
-            score,
-        });
-    }
-};
+}
 
 function getGameType(gameTypeRaw) {
     if (gameTypeRaw.endsWith("policje-nalezy-pierdolic")) {
@@ -93,46 +143,15 @@ function getGameType(gameTypeRaw) {
     }
 }
 
-function isEndOfGame(gameType, time) {
-    switch (gameType) {
-        case DOJRZALOSC:
-            return time === 169;
-        case DZBAN_POLICJA:
-            return time === 122;
-        default:
-            console.error("No end time defined for " + gameType);
-            return false;
-    }
-}
-
 function initClientId() {
-    const clientIdKey = "3770d3a4-ffe0-462b-8b24-a2b1748d4e08";
-
-    let clientId = window.sessionStorage.getItem(clientIdKey);
+    let clientId = window.localStorage.getItem(clientIdKey);
     if (!clientId) {
         clientId = createUUID();
         window.localStorage.setItem(clientIdKey, clientId);
-        gtag('event', 'NewUserEntered', {
-            clientId,
-            sessionId,
-            content_category: "game",
-        });
-        fbq('trackCustom', 'NewUserEntered', {
-            clientId,
-            sessionId,
-            content_category: "game",
-        });
+        window.localStorage.setItem(clientVisitCounterKey, 1 + "");
     } else {
-        gtag('event', 'ReturningUserEntered', {
-            clientId,
-            sessionId,
-            content_category: "game",
-        });
-        fbq('trackCustom', 'NewUserEntered', {
-            clientId,
-            sessionId,
-            content_category: "game",
-        });
+        let clientVisitCount = window.localStorage.getItem(clientVisitCounterKey);
+        window.localStorage.setItem(clientVisitCounterKey, parseInt(clientVisitCount || 0) + 1 + "");
     }
     return clientId;
 }
