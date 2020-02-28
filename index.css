@@ -174,10 +174,6 @@ canvas {
     }
 }
 
-.game-canvas-container {
-    background-color: red;
-}
-
 .box-shadow {
     -webkit-box-shadow: 0px 0px 50px 10px var(--primary-color);
     -moz-box-shadow: 0px 0px 50px 10px var(--primary-color);

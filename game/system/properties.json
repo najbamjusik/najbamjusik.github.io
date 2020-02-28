@@ -56,7 +56,7 @@
 	"shaderCRTUniformValueCornerSize": 0.1,
 	"shaderCRTUniformValueCornerSmoothness": 64.0,
 	"shaderCRTUniformValueBrightness": 1.0,
-	"shaderCRTUniformValueNoiseSize": 0.16,
+	"shaderCRTUniformValueNoiseSize": 0.10,
 	"handheldRenderer.handheldBarHorizontalMaxWidth": 140,
 	"handheldRenderer.handheldBarHorizontalWidthFactor": 0.11,
 	"handheldRenderer.handheldBarVerticalHeightFactor": 0.28,
