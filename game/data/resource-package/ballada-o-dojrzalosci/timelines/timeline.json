@@ -48,7 +48,7 @@
                             1
                         ],
                         "colorGridBackground": [
-                            "#00000000",
+                            "#000000",
                             1
                         ],
                         "verticalScreens": [
@@ -97,7 +97,7 @@
                             0.001
                         ],
                         "colorGridBackground": [
-                            "#00000000",
+                            "#000000",
                             0.001
                         ],
                         "verticalScreens": [
@@ -142,7 +142,7 @@
                             1
                         ],
                         "colorGridBackground": [
-                            "#00000000",
+                            "#000000",
                             1
                         ],
                         "verticalScreens": [
@@ -190,7 +190,7 @@
                             0.01
                         ],
                         "colorGridBackground": [
-                            "#00000000",
+                            "#000000",
                             0.01
                         ]
                     }
@@ -6668,7 +6668,7 @@
                             0.01
                         ],
                         "colorGridBackground": [
-                            "#00000000",
+                            "#000000",
                             0.01
                         ]
                     }
