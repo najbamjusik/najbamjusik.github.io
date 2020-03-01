@@ -143,7 +143,7 @@ canvas {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    padding: min(50px, 12vh) min(50px, 12vw);
+    padding: min(50px, 12vh) 12vw;
     background-color: #000000;
 }
 

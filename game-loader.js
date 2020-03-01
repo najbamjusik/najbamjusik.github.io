@@ -43,7 +43,6 @@ function runGame() {
     if (!getCanvas()) {
         const gameCanvas = document.createElement("canvas");
         gameCanvas.id = "canvas";
-        console.log(gameCanvasContainer.getBoundingClientRect().width);
         gameCanvas.width = gameCanvasContainer.clientWidth;
         gameCanvas.height = gameCanvasContainer.clientHeight;
         gameCanvasContainer.appendChild(gameCanvas);
@@ -62,6 +61,7 @@ function showGameContainer() {
 }
 
 function enableFullscreen() {
+    window.scrollTo(0, 0);
     emitUserClickedFullscreen();
     const gameCanvas = getCanvas();
     if (gameCanvas.requestFullscreen) {

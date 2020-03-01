@@ -19,7 +19,6 @@ function emitGTag(eventName, params) {
 }
 
 function emitFBPixel(eventName, params) {
-    console.log('tracking-event', eventName, params);
     fbq('trackCustom', eventName, {
         ...params,
         clientId,
@@ -30,7 +29,6 @@ function emitFBPixel(eventName, params) {
 
 function emitUserEntered() {
     let clientVisitCount = window.localStorage.getItem(clientVisitCounterKey);
-    console.log("tracking-event", clientVisitCount, parseInt(clientVisitCount));
     if (!clientVisitCount || parseInt(clientVisitCount) == 1) {
         const eventName = "UserEnteredNew";
         emitGTag(eventName, {});
@@ -110,17 +108,16 @@ function emitGameEvent(rawGameType, rawEventName, rawParams) {
             emitFBPixel("GameFinished", gameParams);
             emitGTag("GameFinished", gameParams);
             return;
-        case "GameFinishedRestarted":
+        case "GameFinishRestarted":
             emitFBPixel("GameFinishedRestarted", gameParams);
             emitGTag("GameFinishedRestarted", gameParams);
             return;
-        case "GameFinishedScreenshot":
-            console.log("asd");
+        case "GameFinishScreenshot":
             emitFBPixel("GameFinishedScreenshot", gameParams);
             emitGTag("GameFinishedScreenshot", gameParams);
             takeScreenshot(score, clientId);
             return;
-        case "GameFinishedYoutube":
+        case "GameFinishYoutube":
             emitFBPixel("GameFinishedYoutube", gameParams);
             emitGTag("GameFinishedYoutube", gameParams);
             window.open('https://www.youtube.com/watch?v=4nKiYG2s5P0&list=PLUWx5xffh4KAMbGydRAaLlyuMaA5c6r0f&index=2&t=0s', '_blank');
