@@ -266,6 +266,17 @@ canvas {
     margin: 0 auto;
 }
 
+.game-tips-container {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 3vh;
+    width: 75%;
+    max-width: 1024px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
 .pending{
     border: 16px solid black; /* Light grey */
     border-top: 16px solid var(--primary-color); /* Blue */
