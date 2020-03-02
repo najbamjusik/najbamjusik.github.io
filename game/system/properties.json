@@ -44,7 +44,7 @@
 	"game.hud.primaryFontSize": 2,
 	"game.hud.secondaryFontSize": 1,
 	"game.hud.location": "bottom",
-	"game.hud.fontFamily": "asset_font_04b20",
+	"game.hud.fontFamily": "asset_font_jetbrainsmono_medium",
 	"game.debug.loadOnStart": false,
 	"gameplayrecorder.mode": "off",
 	"shaderCRTUniformValueEnableRadialDistortion": 1.0,
@@ -71,5 +71,7 @@
 	"handheldRenderer.viewScale": 1.0,
 	"handheldRenderer.colorBegin": "#4c1265",
 	"handheldRenderer.colorEnd": "#230c2d",
-	"spaacerap.forceIsHandheld": false
+	"spaacerap.forceIsHandheld": false,
+	"gameplayRenderer.enableProgressBar": true,
+	"isLoggerEnabled": false
 }

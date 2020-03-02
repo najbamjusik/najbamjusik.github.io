@@ -125,6 +125,8 @@
 	"shaderTask.countdown": "countdown",
 	"shaderTask.shader": "shader",
 	"shaderTask.state": "state",
+	"shaderTask.alpha": "alpha",
+	"shaderTask.cooldown": "cooldown",
 	"shroom.gridElement": "gridElement",
 	"shroom.speedValue": "speedValue",
 	"shroom.state": "state",
