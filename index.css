@@ -148,6 +148,13 @@ canvas {
 }
 
 @media all and (max-width: 992px) and (orientation: portrait) {
+    .game-container {
+        padding: 0 0;
+    }
+}
+
+
+@media all and (max-width: 992px) and (orientation: portrait) {
     .game-canvas-container-media {
         width: 88vw;
         height: 88vh;
