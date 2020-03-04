@@ -63,15 +63,17 @@
 	"handheldRenderer.handheldBarVerticalTresholdRatio": 1.33,
 	"handheldRenderer.horizontal.button.verticalOffset": 0.4,
 	"handheldRenderer.horizontal.button.horizontalOffset": 0.5,
-	"handheldRenderer.horizontal.button.size": 0.3,
+	"handheldRenderer.horizontal.button.size": 0.45,
 	"handheldRenderer.vertical.button.verticalOffset": 0.5,
-	"handheldRenderer.vertical.button.horizontalOffset": 0.18,
-	"handheldRenderer.vertical.button.size": 0.3,
+	"handheldRenderer.vertical.button.horizontalOffset": 0.22,
+	"handheldRenderer.vertical.button.size": 0.45,
 	"handheldRenderer.overrideViewScale": true,
 	"handheldRenderer.viewScale": 1.0,
 	"handheldRenderer.colorBegin": "#4c1265",
 	"handheldRenderer.colorEnd": "#230c2d",
 	"spaacerap.forceIsHandheld": false,
 	"gameplayRenderer.enableProgressBar": true,
-	"isLoggerEnabled": false
+	"isLoggerEnabled": false,
+	"virtualJoystick.deadzone": 0.33,
+	"touchInputHandler.virtualJoystick.angleMargin": 12
 }
