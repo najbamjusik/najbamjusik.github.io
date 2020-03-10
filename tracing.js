@@ -58,6 +58,12 @@ function emitUserClickedPlayButton() {
     emitFBPixel(eventName, {})
 }
 
+function emitUserClickedPlayButtonAutomatically() {
+    const eventName = "UserClickedPlay";
+    emitGTag(eventName, {});
+    emitFBPixel(eventName, {automatically: true});
+}
+
 function emitUserScrolledDownOnGame() {
     const eventName = "UserScrolledDownOnGame";
     emitGTag(eventName, {});

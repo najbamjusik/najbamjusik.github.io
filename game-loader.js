@@ -33,6 +33,7 @@ function downloadSources() {
         console.log("GAME LOADED");
         getPlayButton().classList.remove(LOADING_CSS_CLASS);
         getPlayButton().disabled = false;
+        runGame();
         appendJSToDOM("//www.instagram.com/embed.js", document.body, () => {
         })
     });
@@ -48,7 +49,7 @@ function runGame() {
         gameCanvasContainer.appendChild(gameCanvas);
     }
 
-    emitUserClickedPlayButton();
+    emitUserClickedPlayButtonAutomatically();
     GameMaker_Init();
     showGameContainer();
 }
