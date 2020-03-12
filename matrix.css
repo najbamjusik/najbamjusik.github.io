@@ -1,9 +1,108 @@
 body {
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 canvas {
     width: 100%;
     height: 100%;
 }
+
+.audiojs audio {
+    position: absolute;
+    left: -1px;
+}
+
+.audiojs {
+    position: absolute;
+    bottom: 0;
+    margin-left: 45vw;
+    width: 10vw;
+    height: 10vh;
+    background: #265a17;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.audiojs .play-pause {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    float: left;
+    overflow: hidden;
+}
+
+.audiojs p {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.audiojs .play {
+    display: block;
+}
+
+.audiojs .scrubber {
+    display: none;
+}
+
+.audiojs .time {
+    display: none;
+}
+
+.audiojs .play {
+    background-color: #34ff34;
+}
+
+.audiojs .loading {
+    background-color: blue;
+    background: url("audio/play.png");
+    background-size: 100%;
+    background-blend-mode: color-burn;
+}
+
+.audiojs .error {
+    background-color: red;
+}
+
+.audiojs .pause {
+    background-color: yellow;
+}
+
+.playing .play, .playing .loading, .playing .error {
+    display: none;
+}
+
+.playing .pause {
+    display: block;
+}
+
+.loading .play, .loading .pause, .loading .error {
+    display: none;
+}
+
+.loading .loading {
+    display: block;
+}
+
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading {
+    display: none;
+}
+
+.error .error {
+    display: block;
+}
+
+.error .play-pause p {
+    cursor: auto;
+}
+
+.error .error-message {
+    display: block;
+}
+
+

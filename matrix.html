@@ -6,7 +6,17 @@
     <link type="text/css" href="matrix.css" rel="stylesheet"/>
 </head>
 <body>
+<audio id="audio-element" onplay="musicPlaying()" onpause="musicStopped()">
+    <source src="resources/Krulig-Ballada_o_wszystkim.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
 <canvas id="matrix-canvas"></canvas>
 <script type="text/javascript" src="matrix.js"></script>
+<script src="/audio/audio.min.js"></script>
+<script>
+    audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+    });
+</script>
 </body>
 </html>
