@@ -5,24 +5,11 @@ const canvasHeight = canvas.height = document.body.offsetHeight;
 const columns = Math.floor(canvasWidth / 20) + 1;
 ctx.fillStyle = '#000';
 ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+const audio = new Audio("resources/Krulig-Ballada_o_wszystkim.wav");
 
-var time = 1;
-
-function getLyricsRow() {
-    switch (time) {
-        case 1:
-            return "chwdp";
-        case 2:
-            return "jebać policje tylko bug moze nas sondzić";
-        case 3:
-            return " ";
-    }
-}
-
-async function drawText(lyricsRow, msDuration) {
+async function drawText(dataToPrint, msDuration) {
     const startTime = Date.now();
     const ypositions = Array(columns).fill(0);
-    lyricsRow = " " + lyricsRow + " ";
 
     function step() {
         ctx.fillStyle = '#0001';
@@ -30,7 +17,12 @@ async function drawText(lyricsRow, msDuration) {
         ctx.fillStyle = '#0f0';
         ctx.font = '15pt monospace';
 
-        const lyricsChars = lyricsRow.split('');
+        if (!dataToPrint) {
+            return;
+        }
+        const outputText = " " + dataToPrint + " ";
+
+        const lyricsChars = outputText.split('');
         const ySlots = ypositions.length;
         const yLeftOffset = Math.floor((ySlots - lyricsChars.length) / 2);
         let lyricsCharIdx = 0;
@@ -64,12 +56,69 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+const startingTimestamp = 70;
+const hihatInterval = 1.5;
+const dataHeh = [
+    {text: " ", timestamp: startingTimestamp},
+    {text: "jo", timestamp: 2},
+    {text: "dominik krulig bugz", timestamp: 3},
+    {text: "najba mjusik", timestamp: 5},
+    {text: "??? ??? ???", timestamp: 8},
+    {text: "rzuciłem studia", timestamp: 12},
+    {text: "w chuj hajs", timestamp: 18},
+    {text: "do jutra", timestamp: 23},
+    {text: "do jutra", timestamp: 24},
+    {text: "z ziomami", timestamp: 26.2},
+    {text: "za rzadko spotykamy", timestamp: 28.6},
+    {text: "ziomy tęsknią", timestamp: 32.4},
+    {text: "swoją karierę", timestamp: 34.6},
+    {text: "w obce miasto", timestamp: 37.5},
+    {text: "nie widzimy się za czesto", timestamp: 40.4},
+    {text: "na pewno", timestamp: 47},
+    {text: "na pewno", timestamp: 47.8},
+    {text: "na ruchy przestzeń", timestamp: 53},
+    {text: "więcej", timestamp: 59},
+    {text: "więcej", timestamp: 60},
+    {text: "żałuję przed snem", timestamp: 64},
+    {text: "strach", timestamp: 72.8},
+    {text: "strachstrachstrachstrachstrachstrach", timestamp: 72.8 + 1 * hihatInterval},
+    {text: "     strach     ", timestamp: 72.8 + 2 * hihatInterval},
+    {text: "      strach          strach         strach     ", timestamp: 72.8 + 3 * hihatInterval},
+    {text: "overthinking", timestamp: 84.8},
+    {text: "over?overthinking?thinking", timestamp: 84.8 + 1 * hihatInterval},
+    {text: "~~~~~~overthinking~~~~~~", timestamp: 84.8 + 2 * hihatInterval},
+    {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 84.8 + 3 * hihatInterval},
+    // {text: "jebać depresje", timestamp: 22},
+    // {text: "strach", timestamp: 22},
+
+    {text: "", timestamp: 100}, // end item required
+].filter((entry) => entry.timestamp >= startingTimestamp);
+
+console.log(dataHeh);
+
 async function run() {
-    while(1){
-        await drawText("dominik krulig bugz", 2 * 1000);
-        await drawText("ballada o pościgu za hajsem", 2 * 1000);
-        await drawText("najba mjusik", 2 * 1000);
-        await drawText("coming soon", 2 * 1000);
+    while (1) {
+        audio.currentTime = startingTimestamp;
+        await audio.play().catch((err) => {
+            console.error("Audio playing error");
+            console.error(err);
+        });
+        const startTime = Date.now();
+        setInterval(() => {
+            console.info(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s`);
+        }, 1000);
+        for (const [idx, currentEntry] of dataHeh.entries()) {
+            const isLast = idx === dataHeh.length - 1;
+            if (isLast) {
+                continue;
+            }
+            const nextEntry = dataHeh[idx + 1];
+            const durationSec = nextEntry.timestamp - currentEntry.timestamp;
+            const duratonMs = Math.floor(durationSec * 1000);
+            console.log(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s, text:\n ${currentEntry.text}`);
+            await drawText(currentEntry.text, duratonMs);
+        }
+        console.log('end');
     }
 }
 
