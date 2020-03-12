@@ -4,6 +4,7 @@
 <head>
     <link type="text/css" href="index.css" rel="stylesheet"/>
     <link type="text/css" href="matrix.css" rel="stylesheet"/>
+    <link type="text/css" href="font.css" rel="stylesheet">
 </head>
 <body>
 <audio id="audio-element" onplay="musicPlaying()" onpause="musicStopped()">
@@ -11,11 +12,15 @@
     Your browser does not support the audio element.
 </audio>
 <canvas id="matrix-canvas"></canvas>
+<script type="text/javascript" src="helpers.js"></script>
 <script type="text/javascript" src="matrix.js"></script>
 <script src="/audio/audio.min.js"></script>
 <script>
-    audiojs.events.ready(function() {
+    audiojs.events.ready(function () {
         var as = audiojs.createAll();
+        if (!isMobile()) {
+            document.getElementById("player-button").click();
+        }
     });
 </script>
 </body>
