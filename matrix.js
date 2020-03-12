@@ -138,3 +138,11 @@ function musicPlaying() {
 function musicStopped() {
     currentDrawingTaskId++;
 }
+
+let initialRunTriggered = false;
+function musicLoaded() {
+    if (!initialRunTriggered && !isMobile()) {
+        document.getElementById("player-button").click();
+        initialRunTriggered = true;
+    }
+}
