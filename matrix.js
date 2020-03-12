@@ -56,7 +56,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const startingTimestamp = 70;
+const startingTimestamp = 0;
 const hihatInterval = 1.5;
 const dataHeh = [
     {text: " ", timestamp: startingTimestamp},
