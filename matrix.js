@@ -20,11 +20,11 @@ const timeline = [
     {text: "rzuciłem studia", timestamp: 12},
     {text: "w chuj hajs", timestamp: 18},
     {text: "do jutra", timestamp: 23},
-    {text: "do jutra", timestamp: 24},
-    {text: "z ziomami", timestamp: 26.2},
-    {text: "za rzadko spotykamy", timestamp: 28.6},
+    {text: "do jutra", timestamp: 23.8},
+    {text: "z ziomami", timestamp: 26.3},
+    {text: "za rzadko spotykamy", timestamp: 29.2},
     {text: "ziomy tęsknią", timestamp: 32.4},
-    {text: "swoją karierę", timestamp: 34.6},
+    {text: "swoją karierę", timestamp: 35.4},
     {text: "w obce miasto", timestamp: 37.5},
     {text: "nie widzimy się za czesto", timestamp: 40.4},
     {text: "na pewno", timestamp: 47},
@@ -41,12 +41,42 @@ const timeline = [
     {text: "over?overthinking?thinking", timestamp: 84.8 + 1 * hihatInterval},
     {text: "~~~~~~overthinking~~~~~~", timestamp: 84.8 + 2 * hihatInterval},
     {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 84.8 + 3 * hihatInterval},
-    // {text: "jebać depresje", timestamp: 22},
-    // {text: "strach", timestamp: 22},
+    {text: "strach", timestamp: 97.5},
+    {text: "strachstrachstrachstrachstrachstrach", timestamp: 97.5 + 1 * hihatInterval},
+    {text: "     strach     ", timestamp: 97.5 + 2 * hihatInterval},
+    {text: "      strach          strach         strach     ", timestamp: 97.5 + 3 * hihatInterval},
+    {text: "blask", timestamp: 103.5},
+    {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 107.5},
+    {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 110.5},
+    {text: "                                                                              ", timestamp: 117.5},
+    {text: "$$$ stówa $ $  na $ $ godzine $$$", timestamp: 120},
+    {text: " ? ? ? czy to flex jest ? ? ? ", timestamp: 126.5},
+    {text: "taniej bity dać", timestamp: 132.5},
+    {text: "   jak   lece   ", timestamp: 134},
+    {text: "nie potrzebuje zniżki", timestamp: 135},
+    {text: "mam na te bity penge", timestamp: 136.5},
+    {text: "mamy kolejny bangier", timestamp: 138},
+    {text: "najba mjusik", timestamp: 139.6},
+    {text: "życie jest piękne", timestamp: 141},
+    {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.5},
+    {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 146},
+    {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 147.5},
+    {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 149},
+    {text: "? ? ? co tam ? ? ?", timestamp: 154.0},
+    {text: "! ! ! szukam do tego ludzi ! ! !", timestamp: 155.5},
+    {text: "podbij", timestamp: 156.9},
+    {text: "stawki i ogień", timestamp: 158.4},
+    {text: "graficy programiści", timestamp: 159.9},
+    {text: "płynną forse", timestamp: 161.5},
+    {text: "KOCHAM O HAJS WYŚCIG", timestamp: 163},
+    {text: "BIORĘ TO CO MOJE", timestamp: 164.5},
+    {text: "I TO JEST HUSTLA", timestamp: 165.9},
+    {text: "A NIE W BRAMIE Z ZIOŁEM", timestamp: 167},
 
-    {text: "", timestamp: 100}, // end item required
+    {text: "", timestamp: 200}, // end item required
 ];
 let currentDrawingTaskId = 0;
+const startingTimestamp = 0;
 
 async function run(drawingTaskId, startingTimestamp) {
     const dataHeh = [
@@ -126,11 +156,10 @@ async function drawText(drawingTaskId, dataToPrint, msDuration) {
 }
 
 function musicPlaying() {
-    const startingTimestamp = 0;
     const startTime = Date.now();
-    // setInterval(() => {
-    //     console.info(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s`);
-    // }, 1000);
+    setInterval(() => {
+        console.info(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s`);
+    }, 1000);
     currentDrawingTaskId++;
     run(currentDrawingTaskId, startingTimestamp);
 }
