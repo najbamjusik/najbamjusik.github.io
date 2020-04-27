@@ -153,61 +153,63 @@ function buildTimeline() {
 
         {text: "na pewno", timestamp: 47},
         {text: "na pewno", timestamp: 47.8},
-        {text: "na ruchy przestzeń", timestamp: 52.8},
+        {text: "wiecej OOO kola", timestamp: 51.7},
+        {text: "na ruchy przestzeń", timestamp: 53.2},
+        {text: "rosnac przyrost", timestamp: 54.7},
 
-        {text: "ile", timestamp: 56.8},
+        {text: "ile", timestamp: 56.5},
         {text: "? ? ? ? ? ile ? ? ? ? ?", timestamp: 57.8},
 
-        {text: "więcej", timestamp: 58.8},
-        {text: "więcej", timestamp: 59.7},
+        {text: "więcej", timestamp: 59.3},
+        {text: "więcej", timestamp: 60.8},
         {text: "żałuję przed snem", timestamp: 64.4},
 
 
-        {text: "strach", timestamp: 72.4},
-        {text: "strachstrachstrachstrachstrachstrach", timestamp: 72.4 + 1 * hihatInterval},
-        {text: "     strach     ", timestamp: 72.4 + 2 * hihatInterval},
-        {text: "      strach          strach         strach     ", timestamp: 72.4 + 3 * hihatInterval},
-        {text: "     strach     ", timestamp: 72.4 + 3 * hihatInterval},
-        {text: "      strach          strach         strach     ", timestamp: 72.4 + 4 * hihatInterval},
-        {text: "     strach     ", timestamp: 72.4 + 5 * hihatInterval},
+        {text: "strach", timestamp: 72.9},
+        {text: "strachstrachstrachstrachstrachstrach", timestamp: 72.9 + 1 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.9 + 2 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 72.9 + 3 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.9 + 3 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 72.9 + 4 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.9 + 5 * hihatInterval},
 
 
-        {text: "overthinking", timestamp: 85.7},
-        {text: "over?overthinking?thinking", timestamp: 85.6 + 1 * hihatInterval},
-        {text: "~~~~~~overthinking~~~~~~", timestamp: 85.6 + 2 * hihatInterval},
-        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 3 * hihatInterval},
-        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 4 * hihatInterval},
-        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 5 * hihatInterval},
-        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 6 * hihatInterval},
+        {text: "overthinking", timestamp: 86.1},
+        {text: "over?overthinking?thinking", timestamp: 86.1 + 1 * hihatInterval},
+        {text: "~~~~~~overthinking~~~~~~", timestamp: 86.1 + 2 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 86.1 + 3 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 86.1 + 4 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 86.1 + 5 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 86.1 + 6 * hihatInterval},
 
-        {text: "strach", timestamp: 97.6},
-        {text: "strachstrachstrachstrachstrachstrach", timestamp: 97.5 + 1 * hihatInterval},
-        {text: "     strach     ", timestamp: 97.6 + 2 * hihatInterval},
-        {text: "      strach          strach         strach     ", timestamp: 97.5 + 3 * hihatInterval},
-        {text: "     strach     ", timestamp: 97.6 + 4 * hihatInterval},
+        {text: "strach", timestamp: 97.9},
+        {text: "strachstrachstrachstrachstrachstrach", timestamp: 97.9 + 1 * hihatInterval},
+        {text: "     strach     ", timestamp: 97.9 + 2 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 97.9 + 3 * hihatInterval},
+        {text: "     strach     ", timestamp: 97.9 + 4 * hihatInterval},
 
         {text: "blask", timestamp: 102.1},
-        {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 105.0},
-        {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 110.9},
+        {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 108.0},
+        {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 111},
         {text: "                                                                              ", timestamp: 117.0},
 
 
         {text: "$$$ stówa $ $  na $ $ godzine $$$", timestamp: 120},
         {text: " ? ? ? czy to flex jest ? ? ? ", timestamp: 126.7},
-        {text: "      widze sens     ", timestamp: 129.4},
+        {text: "      widze sens     ", timestamp: 129.6},
         {text: "      pierdole turbulencje     ", timestamp: 131.0},
 
 
-        {text: "taniej bity dać", timestamp: 131.5},
-        {text: "   jak   lece   ", timestamp: 133},
-        {text: "nie potrzebuje zniżki", timestamp: 134.5},
-        {text: "mam na te bity penge", timestamp: 136.0},
-        {text: "mamy kolejny bangier", timestamp: 137.0},
-        {text: "najba mjusik", timestamp: 138.6},
-        {text: "życie jest piękne", timestamp: 140.1},
+        {text: "taniej bity dać", timestamp: 132.5},
+        {text: "   jak   lece   ", timestamp: 134},
+        {text: "nie potrzebuje zniżki", timestamp: 135.5},
+        {text: "mam na te bity penge", timestamp: 137.0},
+        {text: "mamy kolejny bangier", timestamp: 138.5},
+        {text: "najba mjusik", timestamp: 140.0},
+        {text: "życie jest piękne", timestamp: 141.5},
 
 
-        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.1},
+        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.1, entryStepSpeed: config.entryStepDurationMsFaster},
         {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 145.7},
         {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 147.2},
         {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 148.7},
@@ -221,10 +223,10 @@ function buildTimeline() {
         {text: "płynną forse", timestamp: 161.5},
 
 
-        {text: "KOCHAM O HAJS WYŚCIG", timestamp: 162.0},
-        {text: "BIORĘ TO CO MOJE", timestamp: 163.0},
-        {text: "I TO JEST HUSTLA", timestamp: 164.0},
-        {text: "A NIE W BRAMIE Z ZIOŁEM", timestamp: 165.0},
+        {text: "KOCHAM O HAJS WYŚCIG", timestamp: 163.0},
+        {text: "BIORĘ TO CO MOJE", timestamp: 164.5},
+        {text: "I TO JEST HUSTLA", timestamp: 166.0},
+        {text: "A NIE W BRAMIE Z ZIOŁEM", timestamp: 167.5},
 
         {text: "", timestamp: 200}, // end item required
     ];
