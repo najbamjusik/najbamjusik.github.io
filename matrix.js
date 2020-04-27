@@ -10,111 +10,61 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const hihatInterval = 1.5;
-
-const timeline = [
-    {text: "jo", timestamp: 2},
-    {text: "dominik krulig bugz", timestamp: 3},
-    {text: "najba mjusik", timestamp: 5},
-    {text: "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)", timestamp: 6},
-    {text: "??? ??? ???", timestamp: 8},
-    {text: "rzuciłem studia", timestamp: 12},
-    {text: "w chuj hajs", timestamp: 18},
-    {text: "do jutra", timestamp: 23},
-    {text: "do jutra", timestamp: 23.8},
-    {text: "z ziomami", timestamp: 25.6},
-    {text: "za rzadko spotykamy", timestamp: 29.0},
-    {text: "ziomy tęsknią", timestamp: 32.4},
-    {text: "swoją karierę", timestamp: 35.4},
-    {text: "w obce miasto", timestamp: 37.5},
-    {text: "nie widzimy się za czesto", timestamp: 40.5},
-    {text: "na pewno", timestamp: 47},
-    {text: "na pewno", timestamp: 47.8},
-    {text: "na ruchy przestzeń", timestamp: 52.8},
-    {text: "więcej", timestamp: 58.8},
-    {text: "więcej", timestamp: 59.7},
-    {text: "żałuję przed snem", timestamp: 64},
-    {text: "strach", timestamp: 72.4},
-    {text: "strachstrachstrachstrachstrachstrach", timestamp: 72.4 + 1 * hihatInterval},
-    {text: "     strach     ", timestamp: 72.4 + 2 * hihatInterval},
-    {text: "      strach          strach         strach     ", timestamp: 72.4 + 3 * hihatInterval},
-    {text: "overthinking", timestamp: 85.3},
-    {text: "over?overthinking?thinking", timestamp: 85.3 + 1 * hihatInterval},
-    {text: "~~~~~~overthinking~~~~~~", timestamp: 85.3 + 2 * hihatInterval},
-    {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.3 + 3 * hihatInterval},
-    {text: "strach", timestamp: 97.5},
-    {text: "strachstrachstrachstrachstrachstrach", timestamp: 97.5 + 1 * hihatInterval},
-    {text: "     strach     ", timestamp: 97.5 + 2 * hihatInterval},
-    {text: "      strach          strach         strach     ", timestamp: 97.5 + 3 * hihatInterval},
-    {text: "blask", timestamp: 103.5},
-    {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 107.9},
-    {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 110.9},
-    {text: "                                                                              ", timestamp: 117.0},
-    {text: "$$$ stówa $ $  na $ $ godzine $$$", timestamp: 120},
-    {text: " ? ? ? czy to flex jest ? ? ? ", timestamp: 126.5},
-    {text: "taniej bity dać", timestamp: 132.5},
-    {text: "   jak   lece   ", timestamp: 134},
-    {text: "nie potrzebuje zniżki", timestamp: 135},
-    {text: "mam na te bity penge", timestamp: 136.5},
-    {text: "mamy kolejny bangier", timestamp: 138},
-    {text: "najba mjusik", timestamp: 139.6},
-    {text: "życie jest piękne", timestamp: 141},
-    {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.5},
-    {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 146},
-    {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 147.5},
-    {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 149},
-    {text: "? ? ? co tam ? ? ?", timestamp: 154.0},
-    {text: "! ! ! szukam do tego ludzi ! ! !", timestamp: 155.5},
-    {text: "podbij", timestamp: 156.9},
-    {text: "stawki i ogień", timestamp: 158.4},
-    {text: "graficy programiści", timestamp: 159.9},
-    {text: "płynną forse", timestamp: 161.5},
-    {text: "KOCHAM O HAJS WYŚCIG", timestamp: 163},
-    {text: "BIORĘ TO CO MOJE", timestamp: 164.5},
-    {text: "I TO JEST HUSTLA", timestamp: 165.9},
-    {text: "A NIE W BRAMIE Z ZIOŁEM", timestamp: 167},
-
-    {text: "", timestamp: 200}, // end item required
-];
 let currentDrawingTaskId = 0;
-const startingTimestamp = 0;
-
+let drawingInterval;
+const config = {
+    startingTimestamp: 0,
+    entryStepDurationMsSlow: 100,
+    entryStepDurationMsFaster: 60,
+    entryOffsetMs: 1000,
+    dissapearMask: '#0001',
+    hihatInterval: 1.5,
+};
+const timeline = buildTimeline();
+console.log(timeline);
 async function run(drawingTaskId, startingTimestamp) {
-    const dataHeh = [
-        {text: " ", timestamp: startingTimestamp},
-        ...timeline.filter((entry) => entry.timestamp >= startingTimestamp)
-    ];
     const audio = document.getElementById("audio-element");
+    audio.currentTime = startingTimestamp;
+    const startTime = Date.now();
 
-    while (1) {
-        audio.currentTime = startingTimestamp;
-        const startTime = Date.now();
-        for (const [idx, currentEntry] of dataHeh.entries()) {
-            const isLast = idx === dataHeh.length - 1;
+    let currentTimelineEntryIndex = -1;
+    drawingInterval = setInterval(async () => {
+        const currentTime = startingTimestamp + (Date.now() - startTime) / 1000;
+        console.info(`Time ${currentTime} s`);
+        const currentTimelineEntry = timeline.find((timelineEntry, idx, arr) => {
+            const isLast = idx === arr.length - 1;
             if (isLast) {
-                continue;
+                return false;
             }
-            const nextEntry = dataHeh[idx + 1];
-            const durationSec = nextEntry.timestamp - currentEntry.timestamp;
-            const duratonMs = Math.floor(durationSec * 1000);
-            console.log(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s, text:\n ${currentEntry.text}`);
-            await drawText(drawingTaskId, currentEntry.text, duratonMs);
-            if (currentDrawingTaskId > drawingTaskId) {
-                break;
+            const nextEntry = arr[idx + 1];
+            return timelineEntry.timestamp <= currentTime && currentTime < nextEntry.timestamp;
+        });
+
+        if (currentTimelineEntry) {
+            if (config.startingTimestamp > 0 && currentTimelineEntryIndex === -1) {
+                // for development changeable startingTimestamp
+                currentTimelineEntryIndex = currentTimelineEntry.idx;
+            }
+            if (currentTimelineEntryIndex < currentTimelineEntry.idx) {
+                currentTimelineEntryIndex++;
+                console.log(currentTimelineEntry);
+                await drawText({
+                    drawingTaskId,
+                    dataToPrint: currentTimelineEntry.text,
+                    msDuration: currentTimelineEntry.duration + config.entryOffsetMs,
+                    msStepDuration: currentTimelineEntry.entryStepSpeed
+                });
             }
         }
-        if (currentDrawingTaskId > drawingTaskId) {
-            break;
-        }
-    }
+    }, 100);
 }
 
-async function drawText(drawingTaskId, dataToPrint, msDuration) {
+async function drawText({drawingTaskId, dataToPrint, msDuration, msStepDuration}) {
     const startTime = Date.now();
     const ypositions = Array(columns).fill(0);
 
     function step() {
-        ctx.fillStyle = '#0001';
+        ctx.fillStyle = config.dissapearMask;
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         ctx.fillStyle = '#0f0';
         ctx.font = '15pt monospace';
@@ -152,27 +102,146 @@ async function drawText(drawingTaskId, dataToPrint, msDuration) {
         if (currentDrawingTaskId > drawingTaskId) {
             break;
         }
-        await sleep(50);
+        await sleep(msStepDuration);
     }
 }
 
 function musicPlaying() {
-    const startTime = Date.now();
-    setInterval(() => {
-        console.info(`Time ${startingTimestamp + (Date.now() - startTime) / 1000} s`);
-    }, 1000);
     currentDrawingTaskId++;
-    run(currentDrawingTaskId, startingTimestamp);
+    run(currentDrawingTaskId, config.startingTimestamp);
 }
 
 function musicStopped() {
     currentDrawingTaskId++;
+    if (drawingInterval) {
+        clearInterval(drawingInterval);
+    }
 }
 
 let initialRunTriggered = false;
+
 function musicLoaded() {
     if (!initialRunTriggered && !isMobile()) {
         document.getElementById("player-button").click();
         initialRunTriggered = true;
     }
+}
+
+function buildTimeline() {
+    const {hihatInterval} = config;
+    const rawTimeline = [
+        {text: "x y z", timestamp: 0, entryStepSpeed: config.entryStepDurationMsSlow},
+        {text: "jo", timestamp: 2},
+        {text: "dominik krulig bugz", timestamp: 3},
+        {text: "najba mjusik", timestamp: 5},
+        {text: "??? ??? ??? ??? ??? ??? ??? ???", timestamp: 8},
+
+
+        {text: "rzuciłem studia", timestamp: 12},
+        {text: "w chuj hajs", timestamp: 18},
+
+
+        {text: "do jutra", timestamp: 23, entryStepSpeed: config.entryStepDurationMsFaster},
+        {text: "do jutra", timestamp: 23.8},
+        {text: "z ziomami", timestamp: 25.9},
+        {text: "za rzadko spotykamy", timestamp: 28.9},
+        {text: "ziomy tęsknią", timestamp: 32.2},
+        {text: "swoją karierę", timestamp: 35.1},
+        {text: "w obce miasto", timestamp: 37.8},
+        {text: "nie widzimy się za czesto", timestamp: 40.9},
+        {text: "     z a d z w o n     ", timestamp: 44.2, entryStepSpeed: config.entryStepDurationMsSlow},
+
+        {text: "na pewno", timestamp: 47},
+        {text: "na pewno", timestamp: 47.8},
+        {text: "na ruchy przestzeń", timestamp: 52.8},
+
+        {text: "ile", timestamp: 56.8},
+        {text: "? ? ? ? ? ile ? ? ? ? ?", timestamp: 57.8},
+
+        {text: "więcej", timestamp: 58.8},
+        {text: "więcej", timestamp: 59.7},
+        {text: "żałuję przed snem", timestamp: 64.4},
+
+
+        {text: "strach", timestamp: 72.4},
+        {text: "strachstrachstrachstrachstrachstrach", timestamp: 72.4 + 1 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.4 + 2 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 72.4 + 3 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.4 + 3 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 72.4 + 4 * hihatInterval},
+        {text: "     strach     ", timestamp: 72.4 + 5 * hihatInterval},
+
+
+        {text: "overthinking", timestamp: 85.7},
+        {text: "over?overthinking?thinking", timestamp: 85.6 + 1 * hihatInterval},
+        {text: "~~~~~~overthinking~~~~~~", timestamp: 85.6 + 2 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 3 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 4 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 5 * hihatInterval},
+        {text: "~overthinking~~~~~~overthinking~~~~~~overthinking~", timestamp: 85.6 + 6 * hihatInterval},
+
+        {text: "strach", timestamp: 97.6},
+        {text: "strachstrachstrachstrachstrachstrach", timestamp: 97.5 + 1 * hihatInterval},
+        {text: "     strach     ", timestamp: 97.6 + 2 * hihatInterval},
+        {text: "      strach          strach         strach     ", timestamp: 97.5 + 3 * hihatInterval},
+        {text: "     strach     ", timestamp: 97.6 + 4 * hihatInterval},
+
+        {text: "blask", timestamp: 102.1},
+        {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 105.0},
+        {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 110.9},
+        {text: "                                                                              ", timestamp: 117.0},
+
+
+        {text: "$$$ stówa $ $  na $ $ godzine $$$", timestamp: 120},
+        {text: " ? ? ? czy to flex jest ? ? ? ", timestamp: 126.7},
+        {text: "      widze sens     ", timestamp: 129.4},
+        {text: "      pierdole turbulencje     ", timestamp: 131.0},
+
+
+        {text: "taniej bity dać", timestamp: 131.5},
+        {text: "   jak   lece   ", timestamp: 133},
+        {text: "nie potrzebuje zniżki", timestamp: 134.5},
+        {text: "mam na te bity penge", timestamp: 136.0},
+        {text: "mamy kolejny bangier", timestamp: 137.0},
+        {text: "najba mjusik", timestamp: 138.6},
+        {text: "życie jest piękne", timestamp: 140.1},
+
+
+        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.1},
+        {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 145.7},
+        {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 147.2},
+        {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 148.7},
+
+
+        {text: "? ? ? co tam ? ? ?", timestamp: 154.0},
+        {text: "! ! ! szukam do tego ludzi ! ! !", timestamp: 155.0},
+        {text: "podbij", timestamp: 156.9},
+        {text: "stawki i ogień", timestamp: 158.4},
+        {text: "graficy programiści", timestamp: 159.9},
+        {text: "płynną forse", timestamp: 161.5},
+
+
+        {text: "KOCHAM O HAJS WYŚCIG", timestamp: 162.0},
+        {text: "BIORĘ TO CO MOJE", timestamp: 163.0},
+        {text: "I TO JEST HUSTLA", timestamp: 164.0},
+        {text: "A NIE W BRAMIE Z ZIOŁEM", timestamp: 165.0},
+
+        {text: "", timestamp: 200}, // end item required
+    ];
+    let tempSpeed = config.entryStepDurationMsSlow; // fallback
+    return rawTimeline.map((timelineEntry, idx, arr) => {
+        const isLast = idx === arr.length - 1;
+        let duration;
+        if (isLast) {
+            duration = 10 * 1000;
+        } else {
+            const nextTimelineEntry = arr[idx + 1];
+            const durationSec = nextTimelineEntry.timestamp - timelineEntry.timestamp;
+            duration = Math.floor(durationSec * 1000);
+        }
+        if (timelineEntry.entryStepSpeed) {
+            tempSpeed = timelineEntry.entryStepSpeed;
+        }
+        return {...timelineEntry, idx: idx, duration, entryStepSpeed: tempSpeed};
+    });
 }
