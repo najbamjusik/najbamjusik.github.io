@@ -161,7 +161,7 @@ function buildTimeline() {
         {text: "? ? ? ? ? ile ? ? ? ? ?", timestamp: 57.8},
 
         {text: "więcej", timestamp: 59.3},
-        {text: "więcej", timestamp: 60.8},
+        {text: "więcej", timestamp: 60.3},
         {text: "żałuję przed snem", timestamp: 64.4},
 
 
@@ -189,7 +189,7 @@ function buildTimeline() {
         {text: "     strach     ", timestamp: 97.9 + 4 * hihatInterval},
 
         {text: "blask", timestamp: 102.1},
-        {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 108.0},
+        {text: "$ $ $ $ $ $ $ $ $ $ $ $", timestamp: 107.8},
         {text: "$ € ¥ £ ฿ $ € ¥ £ ฿ $ € ¥ £ ฿", timestamp: 111},
         {text: "                                                                              ", timestamp: 117.0},
 
@@ -209,10 +209,10 @@ function buildTimeline() {
         {text: "życie jest piękne", timestamp: 141.5},
 
 
-        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.1, entryStepSpeed: config.entryStepDurationMsFaster},
-        {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 145.7},
-        {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 147.2},
-        {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 148.7},
+        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.6, entryStepSpeed: config.entryStepDurationMsFaster},
+        {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 144.6 + 1 * hihatInterval},
+        {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 144.6 + 2 * hihatInterval},
+        {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 144.6 + 3 * hihatInterval},
 
 
         {text: "? ? ? co tam ? ? ?", timestamp: 154.0},
