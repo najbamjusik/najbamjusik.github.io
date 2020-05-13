@@ -20,6 +20,7 @@ canvas {
     margin-left: 40vw;
     width: 20vw;
     height: 5vh;
+    /*height: 0vh;*/
     background: #000000;
     overflow: hidden;
     font-family: monospace;
@@ -33,7 +34,6 @@ canvas {
     float: left;
     overflow: hidden;
     border: 1px solid #0f0;
-    /*display: none*/
 }
 
 .audiojs p {

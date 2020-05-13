@@ -16,12 +16,13 @@ const config = {
     startingTimestamp: 0,
     entryStepDurationMsSlow: 100,
     entryStepDurationMsFaster: 60,
-    entryOffsetMs: 1000,
+    entryOffsetMs: 2000,
     dissapearMask: '#0001',
     hihatInterval: 1.5,
 };
 const timeline = buildTimeline();
 console.log(timeline);
+
 async function run(drawingTaskId, startingTimestamp) {
     const audio = document.getElementById("audio-element");
     audio.currentTime = startingTimestamp;
@@ -67,7 +68,7 @@ async function drawText({drawingTaskId, dataToPrint, msDuration, msStepDuration}
         ctx.fillStyle = config.dissapearMask;
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         ctx.fillStyle = '#0f0';
-        ctx.font = '15pt monospace';
+        ctx.font = '20pt monospace';
 
         if (!dataToPrint) {
             return;
@@ -84,7 +85,7 @@ async function drawText({drawingTaskId, dataToPrint, msDuration, msStepDuration}
                 text = lyricsChars[lyricsCharIdx];
                 lyricsCharIdx++;
             } else {
-                text = String.fromCharCode(Math.random() * 128);
+                text = randomChar();
             }
 
             const x = idx * 20;
@@ -209,7 +210,11 @@ function buildTimeline() {
         {text: "życie jest piękne", timestamp: 141.5},
 
 
-        {text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰", timestamp: 144.6, entryStepSpeed: config.entryStepDurationMsFaster},
+        {
+            text: "⛰️⛰️⛰️muszę popchnąć to na szczyty   ⛰️⛰️⛰",
+            timestamp: 144.6,
+            entryStepSpeed: config.entryStepDurationMsFaster
+        },
         {text: "⛰️⛰️⛰️mati podsyła mi hity   ⛰️⛰️⛰", timestamp: 144.6 + 1 * hihatInterval},
         {text: "⛰️⛰️⛰   ziomal podsyła mi bity   ⛰️⛰️⛰", timestamp: 144.6 + 2 * hihatInterval},
         {text: "⛰️⛰️⛰   czekam na miks robie klipy   ⛰️⛰️⛰", timestamp: 144.6 + 3 * hihatInterval},
@@ -246,4 +251,24 @@ function buildTimeline() {
         }
         return {...timelineEntry, idx: idx, duration, entryStepSpeed: tempSpeed};
     });
+}
+
+function randomChar() {
+    const chars = [
+        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+        "ア", " ウ", "エ", "オ", "ヤ", "ユ", "ヨ", "ワ", "ヰ", "ヱ", "カ", "キ", "ク", "ケ", "サ", "シ", "ス", "セ", "タ", "チ", "ツ", "テ",
+        "ナ", "ニ", "ヌ", "ネ", "ハ", "ヒ", "フ", "ヘ", "マ", "ミ", "ム", "メ", "ラ", "リ", "ル", "レ", "ガ", "ギ", "グ", "ゲ", "ザ", "ジ",
+        "ズ", "ゼ", "バ", "ビ", "ブ", "ベ", "パ", "ピ", "プ", "ペ",
+        "¿", "⅋", "ᔭ", "Ɛ", "∀", "𐐒", "Ↄ", "Ǝ", "Ⅎ", "⅁","⅂","Ԁ","⊥", "⅄", "ƃ", "ʞ", "ʌ",
+        "¿", "⅋", "ᔭ", "Ɛ", "∀", "𐐒", "Ↄ", "Ǝ", "Ⅎ", "⅁","⅂","Ԁ","⊥", "⅄", "ƃ", "ʞ", "ʌ",
+        "¿", "⅋", "ᔭ", "Ɛ", "∀", "𐐒", "Ↄ", "Ǝ", "Ⅎ", "⅁","⅂","Ԁ","⊥", "⅄", "ƃ", "ʞ", "ʌ",
+        "1", "2", "3", "4", "5", "6", "7","8","9","0",
+        "1", "2", "3", "4", "5", "6", "7","8","9","0",
+        "1", "2", "3", "4", "5", "6", "7","8","9","0",
+    ];
+    const idx = Math.floor(Math.random() * chars.length);
+    return chars[idx];
+    // return String.fromCharCode(Math.random() * 128);
 }
