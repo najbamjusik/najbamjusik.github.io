@@ -81,6 +81,12 @@ canvas {
     color: var(--text-secondary-color);
 }
 
+.page-subtitle-2 {
+    font-size: max(8px, 1vw);
+    text-align: center;
+    color: var(--text-secondary-color);
+}
+
 .section-info-container {
     display: block;
     text-align: center;
